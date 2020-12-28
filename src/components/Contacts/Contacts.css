@@ -1,0 +1,40 @@
+.contacts-container {
+  display: flex;
+  align-items: center;
+}
+
+#contacts-img {
+  width: 47.0625em;
+  height: 39.5625em;
+  margin-right: 10em;
+}
+
+.contacts-title {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.13em;
+  line-height: 1.29em;
+
+  margin-bottom: 0.5em;
+}
+
+.contacts-text {
+  font-family: 'Alice';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 1.16em;
+
+  margin-bottom: 1em;
+}
+
+.footer-logos {
+  height: auto;
+  width: 3.5em;
+  margin-right: 0.3em;
+}
+
+#teleg-logo {
+  padding-bottom: 0.3em;
+}

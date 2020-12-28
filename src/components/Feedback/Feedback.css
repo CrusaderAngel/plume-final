@@ -1,0 +1,87 @@
+
+.feedback-static {
+  display: flex;
+  justify-content: space-between;
+
+  width: 86.25em;
+  height: auto;
+  margin: 0 auto 2em;
+}
+
+.feedback-static-inner {
+  width: 25.8125em;
+}
+
+.feedback-static-img {
+  width: 25.8125em;
+  height: 23.4575em;
+}
+
+.feedback-static-title {
+  font-family: Alice;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3em;
+  margin-top: 0.3em;
+  margin-bottom: 0.4em;
+}
+
+.feedback-static-text {
+  font-family: Alice;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.feedback-active {
+  display: flex;
+  justify-content: space-between;
+
+  width: 86.25em;
+  height: auto;
+  margin: 0 auto 7em;
+}
+
+.bubble-text {
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: justify;
+  padding: 1.875em;
+  border-radius: 0.9375em;
+
+  background-color: rgb(223, 223, 223);
+
+  margin-bottom: 0.9em;
+}
+
+.bubble-img {
+  margin-bottom: 0.9em;
+}
+
+.bubble-img-content {
+  max-width: 100%;
+  max-height: 100%;
+
+  border-radius: 0.9375em;
+}
+
+.first-column {
+  width: 25em;
+}
+
+.second-column {
+  width: 25em;
+}
+
+.third-column {
+  width: 20em;
+}
+
+.fourth-column {
+  width: 12em;
+}
