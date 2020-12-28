@@ -1,12 +1,13 @@
 import React from 'react';
 import './About.css';
+import about from '../../img/assets/about.png';
 
 export const About: React.FC = () => {
   return(
     <section id="about">
       <h2 id="section-header">КТО ТАКАЯ</h2>
       <div id="about-content">
-        <img src="/assets/about.png" alt="" id="about-img" />
+        <img src={about} alt="" id="about-img" />
         <div id="about-text">
           <p className="about-text-content">
             Личный тренер, специалист по телу Fresh&Yoga Fit. Учусь на

@@ -3,6 +3,7 @@ import About from '../../components/About';
 import Activities from '../../components/Activities';
 import Contacts from '../../components/Contacts';
 import Cost from '../../components/Cost';
+import FAQ from '../../components/FAQ';
 import Feedback from '../../components/Feedback';
 import HomePage from '../../components/HomePage';
 import Hook from '../../components/Hook';
@@ -42,6 +43,7 @@ export const ClientView: React.FC = () => {
       <Activities />
       <Workflow />
       <Cost />
+      <FAQ />
       <Contacts />
       <Feedback />
       {/*MAIN GROUP END*/}

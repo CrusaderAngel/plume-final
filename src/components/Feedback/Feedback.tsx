@@ -1,6 +1,9 @@
 import React from 'react';
 import ProfiWidget from '../ProfiWidget';
 import './Feedback.css';
+import hendrick from '../../img/assets/feedback/static/static1.png';
+import julia from '../../img/assets/feedback/static/static2.png';
+import lyudmila from '../../img/assets/feedback/static/static3.png';
 
 export const Feedback: React.FC = () => {
   return(
@@ -8,7 +11,7 @@ export const Feedback: React.FC = () => {
       <h2 id="section-header">ОТЗЫВЫ</h2>
       <div className="feedback-static">
         <div className="feedback-static-inner">
-          <img className="feedback-static-img" src="assets/feedback/static/static1.png" alt="" />
+          <img className="feedback-static-img" src={hendrick} alt="" />
           <h3 className="feedback-static-title">Ян-Хендрик</h3>
           <p className="feedback-static-text">
             Занятия мне понравились. Все супер! Занятия не скучные, каждый раз
@@ -18,7 +21,7 @@ export const Feedback: React.FC = () => {
         </div>
 
         <div className="feedback-static-inner">
-          <img className="feedback-static-img" src="assets/feedback/static/static2.png" alt="" />
+          <img className="feedback-static-img" src={julia} alt="" />
           <h3 className="feedback-static-title">Юлия</h3>
           <p className="feedback-static-text">
             С Марией очень приятно общаться, обсудили предварительно, что я
@@ -29,7 +32,7 @@ export const Feedback: React.FC = () => {
         </div>
 
         <div className="feedback-static-inner">
-          <img className="feedback-static-img" src="assets/feedback/static/static3.png" alt="" />
+          <img className="feedback-static-img" src={lyudmila} alt="" />
           <h3 className="feedback-static-title">Людмила</h3>
           <p className="feedback-static-text">
             Маша прекрасный специалист, я нашими занятиями осталась очень
@@ -54,7 +57,7 @@ export const Feedback: React.FC = () => {
 
         <div className="second-column">
           <div className="bubble-img">
-            <img className="bubble-img-content" src="../../img/assets/feedback/static/static1.png" alt="" />
+            <img className="bubble-img-content" src={hendrick} alt="" />
           </div>
           <div className="bubble-text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -83,7 +86,7 @@ export const Feedback: React.FC = () => {
             cupiditate repellat voluptatum aliquid doloremque quibusdam
           </div>
           <div className="bubble-img">
-            <img className="bubble-img-content" src="../../img/assets/feedback/static/static1.png" alt="" />
+            <img className="bubble-img-content" src={hendrick} alt="" />
           </div>
         </div>
       </div>

@@ -1,10 +1,11 @@
 import React from 'react';
 import './Navbar.css';
+import logo from '../../img/assets/logo.svg';
 
 export const Navbar: React.FC = () => {
   return(
     <nav id="navbar">
-    <img src="../../img/assets/logo.svg" alt="" id="navbar-logo" />
+    <img src={logo} alt="" id="navbar-logo" />
     <div id="nabvar-links-row">
       <a href="" className="navbar-link">Кто такая</a>
       <a href="" className="navbar-link">Чем полезна</a>
