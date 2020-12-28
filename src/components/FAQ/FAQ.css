@@ -1,0 +1,36 @@
+.faq-block {
+  width: 86.25em;
+  height: auto;
+  margin: 0 auto;
+}
+
+.faq-question {
+  font-family: Alice;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1.3125em;
+  text-align: justify;
+}
+
+.faq-answer {
+  font-family: Alice;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 1.3125em;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+.faq-answer:last-child {
+  margin-bottom: 0;
+}
+
+#contract-example {
+  transition: opacity 0.2s linear;
+}
+
+#contract-example:hover {
+  opacity: 0.5;
+}

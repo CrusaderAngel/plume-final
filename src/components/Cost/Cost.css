@@ -1,0 +1,124 @@
+.cost-cards {
+  display: flex;
+  width: 86.25em;
+  height: auto;
+  margin: 5.5em auto 4.5em auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.front-card-img {
+  max-width: 27em;
+  max-height: 19.375em;
+}
+
+.front-cards {
+  max-width: 27em;
+  max-height: 19.375em;
+
+  transition: 0.2s;
+}
+
+.front-cards:hover {
+  opacity: 0.9;
+}
+
+#cost {
+  margin-bottom: 4.95em;
+}
+
+
+.front-cards {
+  position: relative;
+
+  width: 28.75em;
+  height: 20.06em;
+
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.front-card-img {
+  width: 28.75em;
+  height: 20.06em;
+}
+
+.front-cards-text {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  white-space: nowrap;
+}
+
+.fade-in-out-front {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.back-cards-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+  text-align: center;
+  white-space: wrap;
+
+  font-family: 'EB Garamond', serif;
+  font-style: normal;
+  font-weight: 200;
+  color: #efefef;
+  font-size: 1.2em;
+
+  cursor: default;
+}
+
+.fade-in-out-back {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.front-cards-title {
+  font-family: 'EB Garamond', serif;
+  font-style: normal;
+  font-weight: 200;
+  color: #efefef;
+  font-size: 3em;
+
+  cursor: default;
+}
+
+.front-cards-price {
+  font-family: 'EB Garamond', serif;
+  font-style: normal;
+  color: #efefef;
+  font-size: 2.25em;
+
+  cursor: default;
+}
+
+.front-cards-button {
+  font-family: 'EB Garamond', serif;
+  font-style: normal;
+  color: #efefef;
+  font-size: 1.5em;
+  cursor: pointer;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.front-cards-button:active,
+.front-cards-button:focus {
+  outline: none !important;
+}
+
+.fade-in-out {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}

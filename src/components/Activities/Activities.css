@@ -1,0 +1,50 @@
+#activities-wrapper {
+  margin: -1em auto 4.5em auto;
+  width: 88em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.activities-cell {
+  cursor: default;
+  width: auto;
+  height: auto;
+  position: relative;
+  transition: 0.2s;
+  margin: 1em;
+}
+
+.activities-cell:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.activities-cell-image {
+  cursor: default;
+  width: 27.2em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.activities-cell-text {
+  cursor: default;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  width: 100%;
+  font-family: 'EB Garamond', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.8em;
+  color: #ffffff;
+}
+
+#hike {
+  top: 30%;
+}

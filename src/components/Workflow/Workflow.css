@@ -1,0 +1,21 @@
+.workflow-text {
+  margin: 0px auto;
+  font-family: 'Alice', serif;
+  font-style: normal;
+  font-size: 2em;
+  width: 43.125em;
+  text-align: justify;
+  padding-bottom: 1.2em;
+}
+
+#workflow-video-container {
+  padding-top: 4em;
+  padding-bottom: 1em;
+  margin: 0px auto;
+  width: 86.25em;
+}
+
+#video {
+  width: 86.25em;
+  height: 47.5em;
+}
