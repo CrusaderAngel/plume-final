@@ -1,13 +1,9 @@
 import React from 'react';
+import BackSVG from '../SVGComponents/BackSVG'
+import './App.css'
 
-interface Props {
-  data: String
-}
-
-export const App: React.FC<Props> = () => {
+export const App: React.FC = () => {
   return(
-    <div>
-      Test Div
-    </div>
+    <BackSVG />
   );
 };

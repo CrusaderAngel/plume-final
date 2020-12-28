@@ -1,0 +1,347 @@
+#backSVGGroup {
+  position: absolute;
+  top: 22em;
+  right: 0em;
+  width: 20%;
+  opacity: 0.5;
+}
+
+#e03b2c35-916c-4307-91f9-d45bffea04e9,
+#fb324562-6470-4587-b5ea-92dfce0525f9,
+#bf91c545-23ef-4e86-b239-745275cae392,
+#abf12cc4-528a-444d-a832-77e915182c70, 
+#a844f571-1063-4239-8ff9-b932a996f7f5 {
+  opacity: 0;
+  -webkit-transition: opacity 0.7s linear;
+  -moz-transition: opacity 0.7s linear;
+  -o-transition: opacity 0.7s linear;
+  transition: opacity 0.7s linear;
+}
+
+.be7acd41-1e24-4dbc-8609-4e9bee2da6f9 {
+  fill: #ededed;
+}
+
+.b6edf1d2-efa8-4818-911f-64e3da2b3cae {
+  fill: #f4f4f4;
+}
+
+.aab970f1-674b-4d6b-8a4d-b78142a81e0f {
+  fill: #e5e5e5;
+}
+
+.a89fb64c-2360-4c4f-8ee8-84a86d2e6bbe {
+  fill: #f5f5f5;
+}
+
+.f7e2c66f-d2c9-4a5e-a569-f5d7c437716a {
+  fill: #ececec;
+}
+
+.fb648718-e231-44b5-bdd2-820b596e6a88 {
+  fill: #d1d1d1;
+}
+
+.ae0f4fa9-5e04-4fb6-9ea7-80464ef2f379 {
+  fill: #e6e6e6;
+}
+
+.e5934556-769e-4ccb-9bf8-ba13a060cd72 {
+  fill: #e8e8e8;
+}
+
+.a7274cd9-9427-4c2b-8ad9-c3b703d5b05d {
+  fill: #d6d6d6;
+}
+
+.a40740ac-fddb-4e34-a7b8-87d312eaf48d {
+  fill: #e7e7e7;
+}
+
+.a5b81bc8-a113-4959-b159-2be833d09f79 {
+  fill: #e9e9e9;
+}
+
+.e75fe248-83a5-4fc5-adf4-de194b8f4c8f {
+  fill: #d2d2d2;
+}
+
+.a9a7cacf-65ad-406b-9d69-f53917d62a30 {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+
+.e77fe983-b4f2-4796-81a7-9f9352fba7bb {
+  fill: #2f2f2f;
+}
+
+.e4b6310c-3a1a-4ca8-ba78-f22dc05cc2f5 {
+  fill: #282828;
+}
+
+.a8c91fbb-252d-4019-b4d9-bcddf755e788 {
+  fill: #505050;
+}
+
+.f326d8a5-108f-41ba-ad06-5b178ca620d9 {
+  fill: #323232;
+}
+
+.ab613daf-5629-48eb-8343-2e1652353269 {
+  fill: #2c2c2c;
+}
+
+.a055ac88-dfe6-4e0c-b743-d081d402d134 {
+  fill: #3d3d3d;
+}
+
+.ad2ea144-6a69-4c41-a1c2-ebbfd7b56843 {
+  fill: #5e5e5e;
+}
+
+.a1e3248f-9a09-4564-b45a-307415cd5c16 {
+  fill: #696969;
+}
+
+.b3cac91c-afa0-4088-a84a-133097ee33fb {
+  fill: #3f3f3f;
+}
+
+.ac2cb8f4-48d4-443a-a799-b8effc179f30 {
+  fill: #686868;
+}
+
+.b7be0b0e-02aa-49c4-93f0-d055c2cf1635 {
+  fill: #373737;
+}
+
+.a654857b-f8a2-4a66-96dc-0486e186532a {
+  fill: #717171;
+}
+
+.f20d635b-d236-42b1-aa50-d5307c1b4a43 {
+  fill: #7d7d7d;
+}
+
+.bd2787d1-0aa6-43c9-bfb7-fb1ab4a9e80d {
+  fill: #727272;
+}
+
+.a7ca9caa-443d-4e3d-8178-894c4f439581 {
+  fill: #484848;
+}
+
+.b900f326-4da0-4dc2-9ff0-f1d7ed73b5ef {
+  fill: #585858;
+}
+
+.aba98bbf-1f57-4935-aaee-cb09d19a4f49 {
+  fill: #818181;
+}
+
+.a1e9d515-64fe-4fcf-9463-861b86d48f0a {
+  fill: #636363;
+}
+
+.a0f25626-f8e2-4ee1-a901-15f9c98c5230 {
+  fill: #8c8c8c;
+}
+
+.a2382d1c-861f-47f7-b907-d2ccbf3ab43e {
+  fill: #797979;
+}
+
+.fe9d19b0-e292-4db5-8d52-697aa8b239f8 {
+  fill: #b3b3b3;
+}
+
+.f5eb677a-fd03-4799-a9e0-f967dd3bcbcd {
+  fill: #a0a0a0;
+}
+
+.a909bf3b-d3a7-40e0-84e3-9511afe9a04e {
+  fill: #cdcdcd;
+}
+
+.bf2ddeb1-4e50-46ef-8212-3e85bc9cfba3 {
+  fill: #d4d4d4;
+}
+
+.affd97ef-8b4d-4f8b-b935-1451429d4c0e {
+  fill: #939393;
+}
+
+.eefd872c-af4e-4800-bbb3-a3079d621063 {
+  fill: #9a9a9a;
+}
+
+.a5373eee-7ca9-4a2f-9dae-704bf06b68a5 {
+  fill: #b8b8b8;
+}
+
+.aba3433d-ffd2-4a7c-a97f-64bfcbdefebe {
+  fill: #a2a2a2;
+}
+
+.ac5bd2e9-daa2-41ba-b3fb-c07636cc7e03 {
+  fill: #929292;
+}
+
+.b5c4ccde-6f6b-4825-b22c-5c3e25c2379d {
+  fill: #bababa;
+}
+
+.f2a0c0b8-118b-4e47-a660-eb0fe53af38a {
+  fill: #9e9e9e;
+}
+
+.bc8d8733-5fe3-46d4-9900-56b3b72e2760 {
+  fill: #d5d5d5;
+}
+
+.a62f027d-c28f-4541-bd21-f2883a42f9b8 {
+  fill: #b7b7b7;
+}
+
+.ee5d5099-4ded-453f-a95c-c8fa0b5c7e7d {
+  fill: #949494;
+}
+
+.b570c309-7345-4c72-840d-5a4a16b2176f {
+  fill: #b1b1b1;
+}
+
+.a0e784f1-acf1-4f9c-8be9-af36dc4c0f8d {
+  fill: #b5b5b5;
+}
+
+.f01f8ca4-6794-4e10-a4fd-763dc6d235e3 {
+  fill: #cfcfcf;
+}
+
+.b449ac17-44ec-4b43-80de-156ad549fd11 {
+  fill: #bcbcbc;
+}
+
+.bb2203de-7e64-48b8-998e-f0166f50cb76 {
+  fill: #c6c6c6;
+}
+
+.bed2d71a-6372-4943-b4f3-0197b200c914 {
+  fill: #d3d3d3;
+}
+
+.baa13e35-45dd-4251-b578-70b354c39c68 {
+  fill: #c9c9c9;
+}
+
+.fdb04be6-7e0f-435f-a6dd-650f8d6eaac9 {
+  fill: #ababab;
+}
+
+.a0d7e9a0-f2f4-4531-a8d4-59361170837d {
+  fill: #c8c8c8;
+}
+
+.f8e606f5-e4c1-4bd8-ae60-2c0974aecd2e {
+  fill: #bbb;
+}
+
+.b2d2b6ca-29fc-46cd-916d-0106113b18e6 {
+  fill: #dadada;
+}
+
+.b760a35c-7fa1-45ce-bc2f-7c9a57a79bdb {
+  fill: #b2b2b2;
+}
+
+.ed09c77b-bb31-4815-8b53-cd6a18604005 {
+  fill: #acacac;
+}
+
+.b8bee412-37fc-42e6-bf7d-1cbbc7cd54bf {
+  fill: #d7d7d7;
+}
+
+.a1f17d74-6a39-45e8-9fa6-10378f73044d {
+  fill: #dedede;
+}
+
+.a2521426-5dc4-4148-87e4-ef5bcc927315 {
+  fill: #d8d8d8;
+}
+
+.ae7e57ff-d811-4437-bcb6-d1a8221dfe76 {
+  fill: #e1e1e1;
+}
+
+.a63d37d3-e071-4d33-a969-a84eb3f3f4d9 {
+  fill: #dfdfdf;
+}
+
+.e695f74c-b616-41fb-bb02-a2c2d0f0283f {
+  fill: #e2e2e2;
+}
+
+.bb7bd904-6f7e-4f7d-a502-738f5a1e5b7a {
+  fill: #e4e4e4;
+}
+
+.ff61b878-754a-43f6-9f66-04fc6c2b5f4a {
+  fill: #d9d9d9;
+}
+
+.b36d60d4-2d46-4c3e-ac40-f35763e09829 {
+  fill: #eaeaea;
+}
+
+.a004af10-cfd7-4efb-849f-0c71f4edc371 {
+  fill: #dbdbdb;
+}
+
+.a60bed31-2c5c-49a5-b7e5-f22fa918f539 {
+  fill: #e0e0e0;
+}
+
+.b3602729-4a70-4b78-bc84-6def94305c16 {
+  fill: #bdbdbd;
+}
+
+.eb613b8a-3599-4821-a8ae-a846a7344576 {
+  fill: #cacaca;
+}
+
+.a16ad6a3-88f2-4628-a7af-a3701c4c3779 {
+  fill: #e3e3e3;
+}
+
+.b7b2c23d-0a80-49dc-9901-708ee302fedc {
+  fill: #ddd;
+}
+
+.a3f23b44-dfc1-4f7b-8496-4179f7755e1c {
+  fill: #d0d0d0;
+}
+
+.bad2ac3c-4edd-448a-af51-4158626a69eb {
+  fill: #dcdcdc;
+}
+
+.f07ded59-9ebf-47f5-9525-a31a14a5207e {
+  fill: #c1c1c1;
+}
+
+.e58bd614-e139-44d5-a59f-02f67dfdeb7a {
+  fill: silver;
+}
+
+.a33cd770-de5f-4cb4-a465-af3aa0d02189 {
+  fill: #cecece;
+}
+
+.e69fcdb5-7097-4b0f-bbd7-d8239942d358 {
+  fill: #c7c7c7;
+}

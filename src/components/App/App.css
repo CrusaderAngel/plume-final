@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-size: clamp(1px, calc(100vw / 120), 16px);
+  width: 100%;
+}
+
+.displayed {
+  opacity: 1 !important;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#section-header {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 0.875em;
+  margin-bottom: 1.2em;
+  color: #262626;
+}

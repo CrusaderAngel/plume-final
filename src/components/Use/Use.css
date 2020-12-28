@@ -1,0 +1,19 @@
+#use {
+  padding-bottom: 5em;
+}
+
+.use-content {
+  font-family: 'Alice', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  text-align: justify;
+  width: 43.125em;
+  line-height: 1.2em;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+#use-content-wrapper {
+  margin-top: 5.45em;
+}

@@ -1,0 +1,29 @@
+#about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30em;
+  margin-bottom: 4.8em;
+}
+
+#about-img {
+  width: 64.375em;
+  height: 30em;
+  margin-right: 4.43em;
+}
+
+.about-text-content {
+  font-family: 'Alice', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  max-width: 19.35em;
+  line-height: 1.2em;
+  padding-bottom: 1em;
+  text-align: justify;
+  color: #333;
+}
+
+#bottom {
+  padding-bottom: 0em;
+}
