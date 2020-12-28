@@ -1,7 +1,7 @@
 #homepage {
   width: 100%;
   height: calc((100vw / 120) * 50);
-  background: url('./assets/back1.png');
+  background: url('../../img/assets/back1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

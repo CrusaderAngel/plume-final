@@ -54,7 +54,7 @@ export const Feedback: React.FC = () => {
 
         <div className="second-column">
           <div className="bubble-img">
-            <img className="bubble-img-content" src="../../../public/assets/feedback/static/static1.png" alt="" />
+            <img className="bubble-img-content" src="../../img/assets/feedback/static/static1.png" alt="" />
           </div>
           <div className="bubble-text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -83,7 +83,7 @@ export const Feedback: React.FC = () => {
             cupiditate repellat voluptatum aliquid doloremque quibusdam
           </div>
           <div className="bubble-img">
-            <img className="bubble-img-content" src="../../../public/assets/feedback/static/static1.png" alt="" />
+            <img className="bubble-img-content" src="../../img/assets/feedback/static/static1.png" alt="" />
           </div>
         </div>
       </div>

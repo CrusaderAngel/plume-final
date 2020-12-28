@@ -1,5 +1,5 @@
 import React from 'react';
-import'./SpineSVG';
+import'./SpineSVG.css';
 
 export const SpineSVG: React.FC = () => {
   return(

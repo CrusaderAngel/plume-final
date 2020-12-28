@@ -1,5 +1,5 @@
 import React from 'react';
-import 'ProfiWidget.css';
+import './ProfiWidget.css';
 
 
 interface Props {
@@ -18,11 +18,11 @@ export const ProfiWidget: React.FC<Props> = () => {
             </button>
             <div className="widget-content-general">
               <div className="widget-content-text">
-                <img className="widget-icons" src="/assets/widget/profi.ru/star.svg" alt="" />
+                <img className="widget-icons" src="../../img/assets/widget/profi.ru/star.svg" alt="" />
                 <span id="star-text">5</span>
               </div>
               <div className="widget-content-text">
-                <img className="widget-icons" src="/assets/widget/profi.ru/plus.svg" alt="" />
+                <img className="widget-icons" src="../../img/assets/widget/profi.ru/plus.svg" alt="" />
                 <span id="mark-text">Очень хвалят</span>
               </div>
             </div>

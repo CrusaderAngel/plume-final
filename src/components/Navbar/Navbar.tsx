@@ -4,7 +4,7 @@ import './Navbar.css';
 export const Navbar: React.FC = () => {
   return(
     <nav id="navbar">
-    <img src="../../../public/assets/logo.svg" alt="" id="navbar-logo" />
+    <img src="../../img/assets/logo.svg" alt="" id="navbar-logo" />
     <div id="nabvar-links-row">
       <a href="" className="navbar-link">Кто такая</a>
       <a href="" className="navbar-link">Чем полезна</a>

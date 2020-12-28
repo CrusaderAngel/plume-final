@@ -1,9 +1,9 @@
 import React from 'react';
-import BackSVG from '../SVGComponents/BackSVG'
+import ClientView from '../../views/ClientView';
 import './App.css'
 
 export const App: React.FC = () => {
   return(
-    <BackSVG />
+    <ClientView />
   );
 };
