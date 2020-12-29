@@ -24,13 +24,13 @@ export const ClientView: React.FC = () => {
   return(
     <div>
       {/*SVG GROUP START*/}
-      <BackSVG />
+      {/* <BackSVG />
       <FirstLineSVG />
       <SpineSVG />
       <HandsSVG />
       <SecondLineSVG />
       <LegsSVG />
-      <ThirdLineSVG />
+      <ThirdLineSVG /> */}
       {/*SVG GROUP END*/}
 
       {/*MAIN GROUP START*/}

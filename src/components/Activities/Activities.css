@@ -48,3 +48,14 @@
 #hike {
   top: 30%;
 }
+
+/* Tablet portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (min-device-height: 1024px) {
+  .activities-cell-image {
+    width: 42em;
+  }
+
+  .activities-cell-text {
+    font-size: 3.8em;
+  }
+}

@@ -17,3 +17,10 @@
 #use-content-wrapper {
   margin-top: 5.45em;
 }
+
+/* Tablet portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (min-device-height: 1024px) {
+  .use-content {
+    font-size: 2.2em;
+  }
+}
