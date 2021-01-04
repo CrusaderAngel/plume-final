@@ -10,5 +10,8 @@ export const listProducts = () => async(dispatch:Dispatch<AnyAction>):Promise<an
   });
   try {
 
-  }
+  }catch(error) {
+
+  };
+  
 };
