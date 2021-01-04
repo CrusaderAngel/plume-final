@@ -1,9 +1,19 @@
 import React, {useEffect} from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import {listUseElements} from '../../redux/actions/useActions';
+import { DefaultRootState, useDispatch, useSelector } from 'react-redux';
+import {fetchAllUseComponentsData} from '../../redux/actions/useActions';
 import './Use.css';
 
 export const Use: React.FC = () => {
+
+  const dispatch = useDispatch();
+  const useComponentsData = useSelector((state:any) => state.useComponentsData);
+  const {loading, data} = useComponentsData;
+  console.log(data)
+
+  useEffect(() => {
+    dispatch(fetchAllUseComponentsData());
+  }, [dispatch]
+  );
 
   return(
     <section id="use">

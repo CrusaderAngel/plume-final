@@ -6,7 +6,7 @@ import { useComponentsDataReducer } from './reducers/useComponentsDataReducer';
 const initialState = {};
 
 const reducer = combineReducers({
-  useDataList: useComponentsDataReducer
+  useComponentsData: useComponentsDataReducer
 });
 
 const composeEnchancer = compose;
