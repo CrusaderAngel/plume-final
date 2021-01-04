@@ -4,7 +4,7 @@ import { Dispatch } from 'react';
 import {AnyAction} from 'redux';
 
 
-export const listProducts = () => async(dispatch:Dispatch<AnyAction>):Promise<any> => {
+export const listUseElements = () => async(dispatch:Dispatch<AnyAction>):Promise<any> => {
   dispatch({
     type: USE_LIST_REQUEST
   });
