@@ -9,9 +9,16 @@ export const listUseElements = () => async(dispatch:Dispatch<AnyAction>):Promise
     type: USE_LIST_REQUEST
   });
   try {
-
+    const data = await Axios.get('/api/useComponent');
+    dispatch({
+      type: USE_LIST_SUCCESS,
+      payload: data
+    });
   }catch(error) {
-
+    dispatch({
+      type: USE_LIST_FAIL,
+      payload: error
+    });
   };
   
 };

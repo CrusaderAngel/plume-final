@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import {listUseElements} from '../../redux/actions/useActions';
 import './Use.css';
 
 export const Use: React.FC = () => {
+
   return(
     <section id="use">
       <h2 id="section-header">ЧЕМ ПОЛЕЗНА</h2>
