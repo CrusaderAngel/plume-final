@@ -27,7 +27,6 @@
   margin-bottom: 4.95em;
 }
 
-
 .front-cards {
   position: relative;
 
@@ -121,4 +120,41 @@
 .fade-in-out {
   opacity: 0;
   transition: opacity 2s ease-in-out;
+}
+
+/* Mobile portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+  .cost-cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .front-cards {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 50%;
+
+    margin-bottom: 1.5em;
+  }
+
+  .front-card-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 50%;
+  }
+
+  .front-cards-title {
+    font-size: 8em;
+  }
+
+  .front-cards-price {
+    font-size: 6em;
+  }
+
+  .front-cards-button {
+    font-size: 4em;
+  }
 }

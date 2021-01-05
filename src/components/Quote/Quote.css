@@ -31,7 +31,7 @@
 }
 
 /* Tablet portrait media */
-@media only screen and (orientation: portrait) and (min-device-width: 768px) and (min-device-height: 1024px) {
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1024px) {
   #quote-header,
   #quote-subheader {
     font-size: 3.1em;
