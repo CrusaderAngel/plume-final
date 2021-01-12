@@ -1,3 +1,0 @@
-export const USE_LIST_REQUEST = 'USE_LIST_REQUEST';
-export const USE_LIST_SUCCESS = 'USE_LIST_REQUEST';
-export const USE_LIST_FAIL = 'USE_LIST_REQUEST';

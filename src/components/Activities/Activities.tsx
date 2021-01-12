@@ -1,4 +1,6 @@
 import React from 'react';
+import { DefaultRootState, useDispatch, useSelector } from 'react-redux';
+import {fetchAllActivitiesComponentsData} from '../../redux/actions/activitiesActions';
 import './Activities.css';
 import edema from '../../img/assets/activities/otek.jpg';
 import stretch from '../../img/assets/activities/stretch.png';
@@ -6,8 +8,20 @@ import posture from '../../img/assets/activities/posture.png';
 import hike from '../../img/assets/activities/hike.png';
 import muscles from '../../img/assets/activities/muscles.png';
 import birch from '../../img/assets/activities/berezka.jpg';
+import { useEffect } from 'react';
 
 export const Activities: React.FC = () => {
+
+  const dispatch = useDispatch();
+  const useComponentsData = useSelector((state:any) => state.useComponentsData);
+  const {loading, data} = useComponentsData;
+  console.log(data)
+
+  useEffect(() => {
+    dispatch(fetchAllActivitiesComponentsData());
+  }, [dispatch]
+  );
+
   return(
     <section id="activities">
       <h2 id="section-header">С ЧЕМ ПОМОГАЮ</h2>
