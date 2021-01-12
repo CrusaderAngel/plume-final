@@ -13,9 +13,8 @@ import { useEffect } from 'react';
 export const Activities: React.FC = () => {
 
   const dispatch = useDispatch();
-  const useComponentsData = useSelector((state:any) => state.useComponentsData);
-  const {loading, data} = useComponentsData;
-  console.log(data)
+  const activitiesComponentsData = useSelector((state:any) => state.activitiesComponentsData);
+  const {loading, data} = activitiesComponentsData;
 
   useEffect(() => {
     dispatch(fetchAllActivitiesComponentsData());
