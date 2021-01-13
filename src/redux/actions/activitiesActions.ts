@@ -9,12 +9,13 @@ export const fetchAllActivitiesComponentsData = () => async(dispatch:Dispatch<An
     type: ACTIVITIES_LIST_REQUEST
   });
   try {
-    const data = await Axios.get('https://localhost:5000/api/activities/getData');
+    const data = await Axios.get(`/api/activities/getData`);
     dispatch({
       type: ACTIVITIES_LIST_SUCCESS,
       payload: data
     });
   }catch(error) {
+    console.log(error)
     dispatch({
       type: ACTIVITIES_LIST_FAIL,
       payload: error

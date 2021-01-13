@@ -9,9 +9,13 @@ import hike from '../../img/assets/activities/hike.png';
 import muscles from '../../img/assets/activities/muscles.png';
 import birch from '../../img/assets/activities/berezka.jpg';
 import { useEffect } from 'react';
+import ActivitiesCard from './ActivitiesCard';
+import {ActivitiesData} from './ActivitiesCard/ActivitiesCard';
+
+
+
 
 export const Activities: React.FC = () => {
-
   const dispatch = useDispatch();
   const activitiesComponentsData = useSelector((state:any) => state.activitiesComponentsData);
   const {loading, data} = activitiesComponentsData;
@@ -21,37 +25,21 @@ export const Activities: React.FC = () => {
   }, [dispatch]
   );
 
-  return(
-    <section id="activities">
-      <h2 id="section-header">С ЧЕМ ПОМОГАЮ</h2>
-      <div id="activities-wrapper">
-        <div className="activities-cell">
-          <img src={edema} alt="" className="activities-cell-image" />
-          <p className="activities-cell-text">Снять отеки</p>
-        </div>
-        <div className="activities-cell">
-          <img src={stretch} alt="" className="activities-cell-image" />
-          <p className="activities-cell-text">Улучшить растяжку</p>
-        </div>
-        <div className="activities-cell">
-          <img src={posture} alt="" className="activities-cell-image" />
-          <p className="activities-cell-text">Исправить осанку</p>
-        </div>
-        <div className="activities-cell">
-          <img src={hike} alt="" className="activities-cell-image" />
-          <p className="activities-cell-text" id="hike">
-            Подготовиться<br />к походу
-          </p>
-        </div>
-        <div className="activities-cell">
-          <img src={muscles} alt="" className="activities-cell-image" />
-          <p className="activities-cell-text">Укрепить мышцы</p>
-        </div>
-        <div className="activities-cell">
-        <img src={birch} alt="" className="activities-cell-image" />
-          <p className="activities-cell-text">Снять боли в спине</p>
-        </div>
-      </div>
-    </section>
-  );
+  if(!loading) {
+    let ActivitiesCardsArray:any = [];
+    data.forEach((elem:ActivitiesData) => {
+      ActivitiesCardsArray.push(<ActivitiesCard _id={elem._id} imagePath={elem.imagePath} textContent={elem.textContent} />)
+    });
+    console.log(ActivitiesCardsArray)
+    return(
+      <section id="activities">
+        <h2 id="section-header">С ЧЕМ ПОМОГАЮ</h2>
+          <div id="activities-wrapper">
+            {ActivitiesCardsArray}
+          </div>
+      </section>
+    );
+  }else{
+    return null;
+  }
 };

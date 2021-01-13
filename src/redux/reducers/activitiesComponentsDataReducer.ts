@@ -7,11 +7,10 @@ export const activitiesComponentsDataReducer = (state = { loading: true, data: [
       return { loading: true };
 
     case ACTIVITIES_LIST_SUCCESS:
-      console.log(action.payload)
-      return { loading: false, data: action.payload };
+      return { loading: false, data: action.payload.data };
 
     case ACTIVITIES_LIST_FAIL:
-      return { loading: false, error: action.payload };
+      return { loading: false, error: action.payload.data };
     default:
       return state;
   };
