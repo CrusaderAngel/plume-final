@@ -2,7 +2,7 @@ import {FEEDBACK_LIST_REQUEST, FEEDBACK_LIST_SUCCESS, FEEDBACK_LIST_FAIL} from '
 import {AnyAction} from 'redux';
 
 
-export const feedbackComponentsDataReducer = (state:{loading: true, data: []}, action:AnyAction) => {
+export const feedbackComponentsDataReducer = (state = {loading: true,  data: []}, action:AnyAction) => {
   switch (action.type) {
     case FEEDBACK_LIST_REQUEST:
       return {loading: true};

@@ -1,10 +1,22 @@
 import React from 'react';
+import {fetchAllCostComponentsData} from '../../redux/actions/costActions';
+import { DefaultRootState, useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
 import './Cost.css';
 import virt from '../../img/assets/cost/virt.jpg';
 import one from '../../img/assets/cost/one.jpg';
 import diagnosis from '../../img/assets/cost/diagnosis.jpg';
 
 export const Cost: React.FC = () => {
+  const dispatch = useDispatch();
+  const costComponentsData = useSelector((state:any) => state.costComponentsData);
+  const {loading, data} = costComponentsData;
+
+  useEffect(() => {
+    dispatch(fetchAllCostComponentsData());
+  }, [dispatch]
+  );
+
   return(
     <section id="cost">
       <h2 id="section-header">СКОЛЬКО СТОИТ</h2>

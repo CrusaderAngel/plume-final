@@ -4,7 +4,6 @@ import { Dispatch } from 'react';
 import {AnyAction} from 'redux';
 
 
-
 export const fetchAllFeedbackComponentsData = () => async(dispatch:Dispatch<AnyAction>):Promise<any> => {
   dispatch({
     type: FEEDBACK_LIST_REQUEST
@@ -12,7 +11,7 @@ export const fetchAllFeedbackComponentsData = () => async(dispatch:Dispatch<AnyA
   try {
     const data = Axios.get('/api/reviews/getData');
     dispatch({
-      type:FEEDBACK_LIST_REQUEST,
+      type:FEEDBACK_LIST_SUCCESS,
       payload:data
     });
   }catch(error) {
