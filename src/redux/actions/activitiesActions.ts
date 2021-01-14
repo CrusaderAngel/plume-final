@@ -15,7 +15,6 @@ export const fetchAllActivitiesComponentsData = () => async(dispatch:Dispatch<An
       payload: data
     });
   }catch(error) {
-    console.log(error)
     dispatch({
       type: ACTIVITIES_LIST_FAIL,
       payload: error

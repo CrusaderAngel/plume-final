@@ -5,14 +5,21 @@ import {AnyAction} from 'redux';
 
 
 
-export const listFeedbackElements = () => async(dispatch:Dispatch<AnyAction>):Promise<any> => {
+export const fetchAllFeedbackComponentsData = () => async(dispatch:Dispatch<AnyAction>):Promise<any> => {
   dispatch({
     type: FEEDBACK_LIST_REQUEST
   });
   try {
-
+    const data = Axios.get('/api/reviews/getData');
+    dispatch({
+      type:FEEDBACK_LIST_REQUEST,
+      payload:data
+    });
   }catch(error) {
-
+    dispatch({
+      type:FEEDBACK_LIST_FAIL,
+      payload:error
+    });
   };
   
 };

@@ -4,14 +4,22 @@ import { Dispatch } from 'react';
 import {AnyAction} from 'redux';
 
 
-export const listCostElements = () => async(dispatch:Dispatch<AnyAction>):Promise<any> => {
+
+export const fetchAllCostComponentsData = () => async(dispatch:Dispatch<AnyAction>):Promise<any> => {
   dispatch({
     type: COST_LIST_REQUEST
   });
   try {
-
+    const data = await Axios.get('/api/cost/getData');
+    dispatch({
+      type:COST_LIST_SUCCESS,
+      payload: data
+    });
   }catch(error) {
-
+    dispatch({
+      type:COST_LIST_FAIL,
+      payload:error
+    })
   };
   
 };

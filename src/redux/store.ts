@@ -1,7 +1,9 @@
 import {applyMiddleware, combineReducers, createStore, compose} from 'redux';
 import thunk from 'redux-thunk';
 import { activitiesComponentsDataReducer } from './reducers/activitiesComponentsDataReducer';
-
+import {costComponentsDataReducer} from './reducers/costComponentsDataReducer';
+import { feedbackComponentsDataReducer } from './reducers/feedbackComponentsDataReducer';
+import {ratingComponentsDataReducer} from './reducers/ratingComponentsDataReducer';
 declare global {
   interface Window {
     __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
@@ -11,7 +13,10 @@ declare global {
 const initialState = {};
 
 const reducer = combineReducers({
-  activitiesComponentsData: activitiesComponentsDataReducer
+  activitiesComponentsData: activitiesComponentsDataReducer,
+  costComponentsData:costComponentsDataReducer,
+  feedbackComponentsData: feedbackComponentsDataReducer,
+  ratingComponentsData: ratingComponentsDataReducer
 });
 
 const composeEnhancers =
