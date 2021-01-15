@@ -20,7 +20,7 @@ export const Activities: React.FC = () => {
   if(!loading) {
     let ActivitiesCardsArray:any = [];
     data.forEach((elem:ActivitiesData) => {
-      ActivitiesCardsArray.push(<ActivitiesCard _id={elem._id} key={elem._id} imagePath={elem.imagePath} textContent={elem.textContent} />)
+      ActivitiesCardsArray.push(<ActivitiesCard _id={elem._id} key={elem._id} imagePath={elem.imagePath} textContent={elem.textContent} editable={false} />)
     });
     return(
       <section id="activities">
