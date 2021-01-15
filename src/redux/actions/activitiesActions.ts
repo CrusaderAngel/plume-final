@@ -9,7 +9,7 @@ export const fetchAllActivitiesComponentsData = () => async(dispatch:Dispatch<An
     type: ACTIVITIES_LIST_REQUEST
   });
   try {
-    const data = await Axios.get(`/api/activities/getData`);
+    const data = await Axios.get(`https://plume-backend.herokuapp.com/api/activities/getData`);
     dispatch({
       type: ACTIVITIES_LIST_SUCCESS,
       payload: data

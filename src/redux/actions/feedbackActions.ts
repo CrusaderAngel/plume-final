@@ -9,7 +9,7 @@ export const fetchAllFeedbackComponentsData = () => async(dispatch:Dispatch<AnyA
     type: FEEDBACK_LIST_REQUEST
   });
   try {
-    const data = Axios.get('/api/reviews/getData');
+    const data = await Axios.get('https://plume-backend.herokuapp.com/api/reviews/getData');
     dispatch({
       type:FEEDBACK_LIST_SUCCESS,
       payload:data

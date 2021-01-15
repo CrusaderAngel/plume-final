@@ -10,7 +10,7 @@ export const fetchAllCostComponentsData = () => async(dispatch:Dispatch<AnyActio
     type: COST_LIST_REQUEST
   });
   try {
-    const data = await Axios.get('/api/cost/getData');
+    const data = await Axios.get('https://plume-backend.herokuapp.com/api/cost/getData');
     dispatch({
       type:COST_LIST_SUCCESS,
       payload: data

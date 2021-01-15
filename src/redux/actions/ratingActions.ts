@@ -9,7 +9,7 @@ export const fetchAllRatingComponentsData = () => async(dispatch:Dispatch<AnyAct
     type: RATING_LIST_REQUEST
   });
   try {
-    const data = await Axios.get('/api/rating/getData');
+    const data = await Axios.get('https://plume-backend.herokuapp.com/api/rating/getData');
     dispatch({
       type: RATING_LIST_SUCCESS,
       payload: data
