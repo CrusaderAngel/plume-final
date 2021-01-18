@@ -31,14 +31,24 @@
 /* Mobile portrait media */
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
   #about-content {
-    height: 30em;
+    flex-direction: column-reverse;
+    height: auto;
   }
 
   #about-img {
+    width: 86.25em;
     height: auto;
+    margin-right: 0;
   }
 
   .about-text-content {
     font-size: 3em;
+    max-width: 28.7em;
+    width: 28.7em;
+    padding-bottom: 0.5em;
+  }
+
+  #bottom {
+    padding-bottom: 0.5em;
   }
 }
