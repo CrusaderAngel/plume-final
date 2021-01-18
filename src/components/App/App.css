@@ -27,3 +27,10 @@ a {
   margin-bottom: 1.2em;
   color: #262626;
 }
+
+/* Mobile portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+  #section-header {
+    font-size: 5em;
+  }
+}

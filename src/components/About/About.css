@@ -27,3 +27,18 @@
 #bottom {
   padding-bottom: 0em;
 }
+
+/* Mobile portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+  #about-content {
+    height: 30em;
+  }
+
+  #about-img {
+    height: auto;
+  }
+
+  .about-text-content {
+    font-size: 3em;
+  }
+}
