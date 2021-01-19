@@ -37,3 +37,18 @@
     font-size: 3.1em;
   }
 }
+
+/* Mobile portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+  #quote-container {
+    height: 60em;
+  }
+
+  #quote-header {
+    font-size: 5em;
+  }
+
+  #quote-subheader {
+    font-size: 4em;
+  }
+}
