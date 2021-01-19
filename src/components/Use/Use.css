@@ -17,3 +17,11 @@
 #use-content-wrapper {
   margin-top: 5.45em;
 }
+
+/* Mobile portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+  .use-content {
+    font-size: 4em;
+    width: 21.5em;
+  }
+}
