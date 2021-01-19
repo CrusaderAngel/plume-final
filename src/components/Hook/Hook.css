@@ -7,3 +7,11 @@
   text-align: justify;
   margin-bottom: 2.1em;
 }
+
+/* Mobile portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+  #hook-text {
+    font-size: 4em;
+    width: 21.5em;
+  }
+}
