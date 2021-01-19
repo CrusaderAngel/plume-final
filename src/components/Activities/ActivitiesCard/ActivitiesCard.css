@@ -1,4 +1,3 @@
-
 .activities-cell {
   cursor: default;
   width: auto;
@@ -53,11 +52,18 @@
 
 /* Mobile portrait media */
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+  .activities-cell {
+    margin: 0 auto 1em;
+    width: 86em;
+    height: auto;
+  }
+
   .activities-cell-image {
-    width: 42em;
+    margin: 0 auto;
+    width: 86em;
   }
 
   .activities-cell-text {
-    font-size: 3.8em;
+    font-size: 8em;
   }
 }
