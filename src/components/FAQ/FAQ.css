@@ -34,3 +34,11 @@
 #contract-example:hover {
   opacity: 0.5;
 }
+
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+  .faq-question,
+  .faq-answer {
+    font-size: 4em;
+    width: 21.5em;
+  }
+}
