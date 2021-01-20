@@ -13,5 +13,6 @@
   #hook-text {
     font-size: 4em;
     width: 21.5em;
+    margin-bottom: 0;
   }
 }
