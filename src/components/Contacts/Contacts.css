@@ -41,10 +41,13 @@
 
 /* Mobile portrait media */
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+  .contacts-info-container {
+    margin-top: -1em;
+  }
   #contacts-img {
-    width: 62.0625em;
-    height: 54.5625em;
-    margin-right: 3em;
+    width: 63.0625em;
+    height: 55.5625em;
+    margin-right: 2em;
   }
 
   .contacts-title {
@@ -58,6 +61,6 @@
   .footer-logos {
     height: auto;
     width: 6em;
-    margin-right: 0.5em;
+    margin-right: 1em;
   }
 }
