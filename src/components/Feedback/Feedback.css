@@ -105,9 +105,38 @@
 
   .feedback-static-text {
     font-size: 4em;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
   }
-  #feedback-last-text {
-    margin-bottom: 0;
+
+  .feedback-active {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .bubble-text {
+    font-size: 4em;
+    padding: 1em;
+  }
+
+  .bubble-img {
+    margin-bottom: 3.3em;
+    width: 86.25em;
+    height: auto;
+  }
+  .bubble-img-content {
+    border-radius: 3em;
+  }
+
+  .first-column {
+    width: 86.25em;
+  }
+  .second-column {
+    width: 86.25em;
+  }
+  .third-column {
+    width: 86.25em;
+  }
+  .fourth-column {
+    width: 86.25em;
   }
 }
