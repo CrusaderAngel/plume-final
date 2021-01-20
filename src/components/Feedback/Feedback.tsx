@@ -24,16 +24,19 @@ export const Feedback: React.FC = () => {
       <div className="feedback-static">
         <div className="feedback-static-inner">
           <img className="feedback-static-img" src={hendrick} alt="" />
+          <div>
           <h3 className="feedback-static-title">Ян-Хендрик</h3>
           <p className="feedback-static-text">
             Занятия мне понравились. Все супер! Занятия не скучные, каждый раз
             много новых упражнений. Мария ни разу не опоздала, очень приятный
             человек с хорошей энергетикой. Обязательно обращусь ещё.
           </p>
+          </div>
         </div>
 
         <div className="feedback-static-inner">
           <img className="feedback-static-img" src={julia} alt="" />
+          <div>
           <h3 className="feedback-static-title">Юлия</h3>
           <p className="feedback-static-text">
             С Марией очень приятно общаться, обсудили предварительно, что я
@@ -41,16 +44,19 @@ export const Feedback: React.FC = () => {
             занятие пролетело незаметно и в приятной атмосфере. В жизни она
             прекрасный и светлый человек. С удовольствием её рекомендую)
           </p>
+          </div>
         </div>
 
         <div className="feedback-static-inner">
           <img className="feedback-static-img" src={lyudmila} alt="" />
+          <div>
           <h3 className="feedback-static-title">Людмила</h3>
-          <p className="feedback-static-text">
+          <p className="feedback-static-text" id="feedback-last-text">
             Маша прекрасный специалист, я нашими занятиями осталась очень
             довольна, буквально с первой тренировки увидела результат и тело
             быстро приобрело рельеф и мышцы подтянулись.
           </p>
+          </div>
         </div>
       </div>
 
