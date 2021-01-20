@@ -38,3 +38,26 @@
 #teleg-logo {
   padding-bottom: 0.3em;
 }
+
+/* Mobile portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+  #contacts-img {
+    width: 62.0625em;
+    height: 54.5625em;
+    margin-right: 3em;
+  }
+
+  .contacts-title {
+    font-size: 3.33em;
+  }
+
+  .contacts-text {
+    font-size: 3.2em;
+  }
+
+  .footer-logos {
+    height: auto;
+    width: 6em;
+    margin-right: 0.5em;
+  }
+}
