@@ -122,6 +122,21 @@
   transition: opacity 2s ease-in-out;
 }
 
+/* Tablet portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .front-cards-title {
+    font-size: 3.7em;
+  }
+
+  .front-cards-price {
+    font-size: 3em;
+  }
+
+  .front-cards-button {
+    font-size: 2em;
+  }
+}
+
 /* Mobile portrait media */
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
   .cost-cards {
