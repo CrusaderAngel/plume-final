@@ -8,6 +8,15 @@
   margin-bottom: 2.1em;
 }
 
+/* Tablet portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #hook-text {
+    font-size: 2.5em;
+    width: 34.4em;
+    margin-bottom: 0;
+  }
+}
+
 /* Mobile portrait media */
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
   #hook-text {
