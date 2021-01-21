@@ -85,6 +85,22 @@
   width: 12em;
 }
 
+/* Tablet portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .feedback-static-title {
+    font-size: 3em;
+  }
+
+  .feedback-static-text {
+    font-size: 2em;
+  }
+
+  .bubble-text {
+    font-size: 2em;
+    padding: 1em;
+  }
+}
+
 /* Mobile portrait media */
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
   .feedback-static {

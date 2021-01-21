@@ -135,6 +135,10 @@
   .front-cards-button {
     font-size: 2em;
   }
+
+  .front-card-img {
+    max-width: 27.7em;
+  }
 }
 
 /* Mobile portrait media */
