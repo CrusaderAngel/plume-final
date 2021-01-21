@@ -6,8 +6,10 @@ import { useEffect } from 'react';
 import ActivitiesCard from './ActivitiesCard';
 import {ActivitiesData} from './ActivitiesCard/ActivitiesCard';
 
+type Editable = {editable:boolean}
 
-export const Activities: React.FC = () => {
+
+export const Activities: React.FC<Editable> = (props) => {
   const dispatch = useDispatch();
   const activitiesComponentsData = useSelector((state:any) => state.activitiesComponentsData);
   const {loading, data} = activitiesComponentsData;
@@ -20,7 +22,7 @@ export const Activities: React.FC = () => {
   if(!loading) {
     let ActivitiesCardsArray:any = [];
     data.forEach((elem:ActivitiesData) => {
-      ActivitiesCardsArray.push(<ActivitiesCard _id={elem._id} key={elem._id} imagePath={elem.imagePath} textContent={elem.textContent} editable={false} />)
+      ActivitiesCardsArray.push(<ActivitiesCard _id={elem._id} key={elem._id} imagePath={elem.imagePath} textContent={elem.textContent} editable={props.editable} />)
     });
     return(
       <section id="activities">

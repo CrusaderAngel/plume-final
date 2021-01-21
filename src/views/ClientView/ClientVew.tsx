@@ -40,7 +40,7 @@ export const ClientView: React.FC = () => {
       <Use />
       <Quote />
       <Hook />
-      <Activities />
+      <Activities editable={false}/>
       <Workflow />
       <Cost />
       <FAQ />
