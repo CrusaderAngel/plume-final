@@ -20,7 +20,7 @@ export const ActivitiesCard: React.FC<ActivitiesData> = (data:ActivitiesData) =>
   if(!editable) {
     return (
       <div id={_id} className="activities-cell">
-        <img src={imagePath} alt="" className="activities-cell-image" />
+        <img src={imagePath} alt="" className="activities-cell-image"/>
         <p className="activities-cell-text">{textContent}</p>
       </div>
     );

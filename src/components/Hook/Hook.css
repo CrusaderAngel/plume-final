@@ -8,6 +8,11 @@
   margin-bottom: 2.1em;
 }
 
+#hook-text-breakable {
+  display: inline;
+  margin-top: 0em;
+}
+
 /* Tablet portrait media */
 @media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1024px) {
   #hook-text {
@@ -20,8 +25,14 @@
 /* Mobile portrait media */
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
   #hook-text {
-    font-size: 4em;
-    width: 21.5em;
+    font-size: 5.8em;
+    max-width: 14.5em;
+    width: 17.5em;
+    text-align: start;
     margin-bottom: 0;
+  }
+  #hook-text-breakable {
+    display: block;
+    margin-top: 1em;
   }
 }

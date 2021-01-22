@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import About from '../../components/About';
 import Activities from '../../components/Activities';
 import Contacts from '../../components/Contacts';
@@ -21,6 +21,7 @@ import Workflow from '../../components/Workflow';
 
 
 export const ClientView: React.FC = () => {
+
   return(
     <div>
       {/*SVG GROUP START*/}

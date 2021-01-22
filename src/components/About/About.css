@@ -40,22 +40,37 @@
 
 /* Mobile portrait media */
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+  
+  #about-content {
+    background-image: url('../../img/assets/about-mobile-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95em !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
   #about-content {
     flex-direction: column-reverse;
     height: auto;
   }
 
   #about-img {
-    width: 86.25em;
+    display: none;
+    /* width: 86.25em;
     height: auto;
-    margin-right: 0;
+    margin-right: 0; */
   }
 
   .about-text-content {
-    font-size: 4em;
-    max-width: 21.5em;
-    width: 21.5em;
-    padding-bottom: 0.5em;
+    font-size: 5.8em;
+    max-width: 14.5em;
+    width: 17.5em;
+    margin-bottom: 0em;
+    color: #eee;
+    text-align: start;
   }
 
   #bottom {

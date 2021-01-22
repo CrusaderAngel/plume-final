@@ -60,6 +60,7 @@ input[type="submit"] {
   margin-top: 0.5em;
   cursor: pointer;
   border: 0.125em solid rgb(61, 60, 60);
+  font-family: 'Alice', serif;
   border-radius: 0.3em;
   display: flex;
   justify-content: center;
@@ -87,7 +88,7 @@ input[type="submit"] {
 /* Mobile portrait media */
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
   .activities-cell {
-    margin: 0 auto 1em;
+    margin: 0 auto 6em;
     width: 86em;
     height: auto;
   }
@@ -95,6 +96,9 @@ input[type="submit"] {
   .activities-cell-image {
     margin: 0 auto;
     width: 86em;
+    height: 52em;
+    object-fit: cover;
+    image-rendering: optimizeSpeed;
   }
 
   .activities-cell-text {

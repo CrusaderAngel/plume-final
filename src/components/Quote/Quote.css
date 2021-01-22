@@ -41,14 +41,19 @@
 /* Mobile portrait media */
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
   #quote-container {
-    height: 60em;
+    background: url('../../img/assets/mobile-quote-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 140em;
   }
 
   #quote-header {
-    font-size: 5em;
+    font-size: 7em;
   }
 
   #quote-subheader {
-    font-size: 4em;
+    font-size: 6em;
+    width: 15em;
   }
 }

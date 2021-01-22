@@ -1,3 +1,7 @@
+#feedback-carousel {
+  display: none;
+}
+
 .feedback-static {
   display: flex;
   justify-content: space-between;
@@ -103,11 +107,30 @@
 
 /* Mobile portrait media */
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+
+  #feedback-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-item {
+    height: 165em;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev{
+    margin-top: 10em;
+    filter: invert(100%);
+}
   .feedback-static {
     flex-direction: column;
+    display: none;
   }
+
   .feedback-static-inner {
     width: 86.25em;
+    margin: 0 auto;
   }
 
   .feedback-static-img {
@@ -116,11 +139,12 @@
   }
 
   .feedback-static-title {
-    font-size: 6em;
+    font-size: 8em;
+    text-align: center;
   }
 
   .feedback-static-text {
-    font-size: 4em;
+    font-size: 5em;
     margin-bottom: 1.5em;
   }
 

@@ -29,7 +29,9 @@
 /* Mobile portrait media */
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
   .use-content {
-    font-size: 4em;
-    width: 21.5em;
+    font-size: 5.8em;
+    max-width: 14.5em;
+    width: 17.5em;
+    text-align: start;
   }
 }

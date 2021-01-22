@@ -8,7 +8,7 @@ import telega from '../../img/assets/teleg-logo.svg';
 
 
 export const Contacts: React.FC = () => {
-  return(
+  return (
     <section id="footer">
       <h2 id="section-header">КОНТАКТЫ</h2>
       <div className="contacts-container">
@@ -21,7 +21,7 @@ export const Contacts: React.FC = () => {
           <p className="contacts-text">+7 (977) 522-98-61</p>
 
           <h3 className="contacts-title">Profi.ru</h3>
-          <p className="contacts-text">https://profi.ru/profile/GomankoMA2</p>
+          <p className="contacts-text">profi.ru/profile/GomankoMA2</p>
 
           <h3 className="contacts-title">Instagram</h3>
           <p className="contacts-text">@maria_gomanko</p>

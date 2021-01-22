@@ -94,7 +94,9 @@
 
 /* Mobile portrait media */
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
-  .profi-widget-container {
-    display: none;
+  .profi-widget {
+    font-size: 3.25em;
+    margin: 1em auto;
+    margin-bottom: 3em;
   }
 }

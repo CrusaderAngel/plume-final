@@ -161,19 +161,22 @@
   .front-card-img {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    /* height: auto; */
     max-height: 50%;
+    height: 52em;
+    object-fit: cover;
+    image-rendering: optimizeSpeed;
   }
 
   .front-cards-title {
-    font-size: 8em;
+    font-size: 10em;
   }
 
   .front-cards-price {
-    font-size: 6em;
+    font-size: 8em;
   }
 
   .front-cards-button {
-    font-size: 4em;
+    font-size: 6em;
   }
 }
