@@ -62,6 +62,9 @@
 /* Mobile portrait media */
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
   #homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
     background: url('../../img/assets/back-mobile.jpg');
     background-position: bottom;
@@ -70,34 +73,53 @@
   }
 
   #homepage-content-wrapper {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    max-width: 90%;
+    margin: 0;
+    padding: 0;
+    top: 25%;
+    left: 5%;
   }
 
   #homepage-header{
     color: #EEEEEE;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
     font-size: 9.8em;
+    margin-top: 0.5em;
+    padding: 0;
   }
 
   #homepage-subheader{
     color: #EEEEEE;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+    font-size: 5.8em;
   }
 
   #homepage-social {
+    position: relative;
+    top: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
   }
 
   .homepage-social-link {
     height: auto;
-    margin-right: 0em;
+    max-width: 17em;
     filter: invert(1) brightness(0.2) invert(1);
+    margin: 2em 0em;
+    padding: 0;
   }
 
   #telegram {
-
+    margin-top: 2em;
+    max-width: 17em;
   }
 }
 
