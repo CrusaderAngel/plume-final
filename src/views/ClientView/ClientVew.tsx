@@ -22,8 +22,8 @@ import Workflow from '../../components/Workflow';
 
 export const ClientView: React.FC = () => {
 
-  return(
-    <div>
+  return (
+    <>
       {/*SVG GROUP START*/}
       {/* <BackSVG />
       <FirstLineSVG />
@@ -35,19 +35,19 @@ export const ClientView: React.FC = () => {
       {/*SVG GROUP END*/}
 
       {/*MAIN GROUP START*/}
-      <Navbar/>
+      <Navbar />
       <HomePage />
       <About />
       <Use />
       <Quote />
       <Hook />
-      <Activities editable={false}/>
+      <Activities editable={false} />
       <Workflow />
       <Cost />
       <FAQ />
       <Contacts />
       <Feedback />
       {/*MAIN GROUP END*/}
-    </div>
+    </>
   );
 };
