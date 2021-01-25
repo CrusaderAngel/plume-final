@@ -35,3 +35,35 @@
   color: #854801;
   cursor: pointer;
 }
+
+
+
+/* Tablet portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #navbar {
+    position: fixed;
+    height: 11.4em;
+    background: #b3ada9;
+    z-index: 9999;
+  }
+
+  #navbar-logo {
+    filter: invert(1) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+}
+
+
+/* Mobile portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+  #navbar {
+    position: fixed;
+    height: 15.4em;
+    background: #b3ada9;
+    z-index: 9999;
+  }
+
+  #navbar-logo {
+    filter: invert(1) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}

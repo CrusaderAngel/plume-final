@@ -46,3 +46,93 @@
   margin-top: 0.2em;
   max-width: 2.9em;
 }
+
+/* Tablet portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #homepage {
+    height: 100vh;
+    background: url('../../img/assets/back-tablet.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+}
+
+
+/* Mobile portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+  #homepage {
+    height: 100vh;
+    background: url('../../img/assets/back-mobile.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #homepage-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 98.28em;
+    height: auto;
+    margin-left: 17.57em;
+    margin-right: 6.5em;
+    padding-top: 55.7em;
+  }
+
+
+  #homepage-header{
+    color: #EEEEEE;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+    font-size: 9.8em;
+  }
+
+  #homepage-subheader{
+    color: #EEEEEE;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+    font-size: 6.2em;
+  }
+
+  #homepage-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50em;
+  }
+
+  .homepage-social-link {
+    max-width: 14.5em;
+    margin-top: 4em;
+    height: auto;
+    margin-right: 0em;
+    filter: invert(1) brightness(0.2) invert(1);
+  }
+
+  #telegram {
+    max-width: 14.5em;
+    margin-top: 4em;
+    margin-right: 0em;
+  }
+}
+
+/* IPHONEX portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) and (min-device-height: 810px) {
+  #homepage {
+    height: 100vh;
+    width: 100vw;
+    background: url('../../img/assets/back-mobile-long.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #homepage-content-wrapper {
+    padding-top: 70.7em;;
+  }
+
+  #homepage-social {
+    margin-top: 60em;
+  }
+}
