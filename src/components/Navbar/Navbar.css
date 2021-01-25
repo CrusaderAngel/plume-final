@@ -58,7 +58,7 @@
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
   #navbar {
     position: fixed;
-    height: 10%;
+    height: 15.4em;
     background: #b3ada9;
     z-index: 9999;
   }
