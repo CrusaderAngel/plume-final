@@ -64,6 +64,14 @@
   }
 
   #navbar-logo {
-    filter: invert(1) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    height: auto;
+    max-width: 35%;
+    /* margin-left: 5.2em;
+    margin-right: 6.25em; */
+    filter: invert(1) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  }
+
+  #nabvar-links-row {
+    display: none;
   }
 }
