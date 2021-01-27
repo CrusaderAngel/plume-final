@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import About from '../../components/About';
 import Activities from '../../components/Activities';
 import Contacts from '../../components/Contacts';
@@ -21,6 +21,18 @@ import Workflow from '../../components/Workflow';
 
 
 export const ClientView: React.FC = () => {
+  const [blurred, setBlurred] = useState(false);
+  let blurredClass: string;
+
+  const switchBlurred = () => {
+    setBlurred(!blurred)
+  }
+
+  if (blurred) {
+    blurredClass = "blurred";
+  } else {
+    blurredClass = '';
+  }
 
   return (
     <>
@@ -35,19 +47,21 @@ export const ClientView: React.FC = () => {
       {/*SVG GROUP END*/}
 
       {/*MAIN GROUP START*/}
-      <Navbar />
-      <HomePage />
-      <About />
-      <Use />
-      <Quote />
-      <Hook />
-      <Activities editable={false} />
-      <Workflow />
-      <Cost />
-      <FAQ />
-      <Contacts />
-      <Feedback />
-      {/*MAIN GROUP END*/}
+      <Navbar switchBlurred={switchBlurred} />
+      <div id="main-wrapper" className={`${blurredClass}`}>;
+        <HomePage />
+        <About />
+        <Use />
+        <Quote />
+        <Hook />
+        <Activities editable={false} />
+        <Workflow />
+        <Cost />
+        <FAQ />
+        <Contacts />
+        <Feedback />
+        {/*MAIN GROUP END*/}
+      </div>
     </>
   );
 };

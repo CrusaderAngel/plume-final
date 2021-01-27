@@ -36,6 +36,10 @@
   cursor: pointer;
 }
 
+#burger-button{
+  display: none;
+}
+
 
 
 /* Tablet portrait media */
@@ -73,5 +77,20 @@
 
   #nabvar-links-row {
     display: none;
+  }
+
+  #burger-wrapper{
+    position: absolute;
+    width: 9em;
+    height: 9em;
+    right: 5%;
+  }
+
+  #burger-button {
+    display: inline-block;
+    position: absolute;
+    height: auto;
+    width: 9em;
+    right: 5%;
   }
 }
