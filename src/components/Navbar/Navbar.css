@@ -8,6 +8,7 @@
   justify-content: space-evenly;
 }
 
+
 #navbar-logo {
   height: auto;
   max-width: 15.5%;
@@ -36,9 +37,64 @@
   cursor: pointer;
 }
 
-#burger-button{
+.burger-wrapper{
   display: none;
 }
+
+.toggled-visible-sidebar{
+  display: block !important;
+  position: fixed;
+  top: 3%;
+  right: 3%;
+  width: 3em;
+  height: 3em;
+  z-index: 9999;
+}
+
+.toggled-visible-sidebar:hover {
+  cursor: pointer;
+  filter: invert(0.5) drop-shadow(0px 4px 4px rgba(34, 34, 34, 0));
+}
+
+.toggled-visible-sidebar > * {
+  display: inline-block;
+  position: absolute;
+  height: auto;
+  width: 3em;
+  filter: invert(1) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0));
+  z-index: 9999;
+}
+
+.hidden{
+  right: -100% !important;
+}
+
+.sidebar {
+  position: fixed;
+  right: 0%;
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 30%;
+  height: 100%;
+  z-index: 9998;
+  background-color:rgba(245,238,234, 0.9);
+  transition: .2s linear;
+}
+
+.sidebar-link {
+  color: #333;
+  font-size: 2em;
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  padding: 0em;
+  margin: 0.1em 0em;
+  margin-left: 20%;    
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
 
 
 
@@ -79,11 +135,14 @@
     display: none;
   }
 
-  #burger-wrapper{
-    position: absolute;
+  .burger-wrapper{
+    display: block;
+    position: fixed;
     width: 9em;
     height: 9em;
     right: 5%;
+    top: 1.5%;
+    z-index: 9999;
   }
 
   #burger-button {
@@ -92,5 +151,32 @@
     height: auto;
     width: 9em;
     right: 5%;
+  }
+
+
+  .sidebar {
+    position: fixed;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+    z-index: 9998;
+    background-color:rgba(179,173,169, 0.9);
+    transition: .2s linear;
+  }
+  
+  .sidebar-link {
+    color: white;
+    font-size: 7em;
+    padding: 0em;
+    margin: 0.1em 0em;    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  }
+
+  .hidden{
+    right: -100% !important;
   }
 }
