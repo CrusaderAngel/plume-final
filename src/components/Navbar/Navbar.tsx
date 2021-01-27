@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../../img/assets/logo.svg';
+import insta from '../../img/assets/inst-logo.svg';
+import whatsapp from '../../img/assets/whats-logo.svg';
+import vk from '../../img/assets/vk-logo.svg';
+import telega from '../../img/assets/teleg-logo.svg';
 
 export const Navbar: React.FC<any> = (props) => {
   const [hidden, setHidden] = useState('hidden');
@@ -38,6 +42,7 @@ export const Navbar: React.FC<any> = (props) => {
       </div>
 
       <div className={`${hidden} sidebar`}>
+        <img src={logo} alt="" id="sidebar-logo" />
         <a href="#about" className="sidebar-link">Кто такая</a>
         <a href="#use" className="sidebar-link">Чем полезна</a>
         <a href="#hook" className="sidebar-link">В чем фишка</a>
@@ -46,6 +51,20 @@ export const Navbar: React.FC<any> = (props) => {
         <a href="#FAQ" className="sidebar-link">Вопросы</a>
         <a href="#footer" className="sidebar-link">Контакты</a>
         <a href="#feedback" className="sidebar-link">Отзывы</a>
+        <div id="social-links-wrapper">
+          <a className="sidebar-social-link-wrapper" href="">
+            <img src={insta} alt="insta" className="sidebar-social-link" />
+          </a>
+          <a className="sidebar-social-link-wrapper" href="">
+            <img src={whatsapp} alt="whatsapp" className="sidebar-social-link" />
+          </a>
+          <a className="sidebar-social-link-wrapper" href="">
+            <img src={vk} alt="vk" className="sidebar-social-link" />
+          </a>
+          <a className="sidebar-social-link-wrapper" href="">
+            <img src={telega} alt="telega" className="sidebar-social-link" id="telegram-social" />
+          </a>
+        </div>
       </div>
     </>
   );

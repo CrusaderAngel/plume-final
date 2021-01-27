@@ -95,6 +95,33 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
+#sidebar-logo {
+  width: 25em;
+  margin: 0 auto;
+}
+
+
+#social-links-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 19%;
+}
+
+.sidebar-social-link-wrapper {
+  margin: 2em 0.35em;
+}
+
+.sidebar-social-link {
+  width: 5em;
+  height: auto;
+}
+
+#telegram-social {
+ max-width: 5em;
+}
+
 
 
 
@@ -178,5 +205,33 @@
 
   .hidden{
     right: -100% !important;
+  }
+
+  #sidebar-logo {
+    display: none;
+  }
+
+  #social-links-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0%;
+    margin-top: 5em;
+  }
+  
+  .sidebar-social-link-wrapper {
+    margin: 2em 1em;
+  }
+  
+  .sidebar-social-link {
+    width: 10em;
+    height: auto;
+    filter: invert(1) brightness(0.2) invert(1);
+  }
+  
+  #telegram-social {
+   max-width: 10em;
+   margin-top: 0.2em;
   }
 }
