@@ -1,0 +1,9 @@
+#admin-window {
+  height: auto;
+  margin-left: 15%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

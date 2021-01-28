@@ -7,10 +7,7 @@ import ActivitiesCard from '../ActivitiesCard';
 import { ActivitiesData } from '../ActivitiesCard/ActivitiesCard';
 import Loader from '../../Loader';
 
-type Editable = { editable: boolean }
-
-
-export const Activities: React.FC<Editable> = (props) => {
+export const Activities: React.FC = (props) => {
   const dispatch = useDispatch();
   const activitiesComponentsData = useSelector((state: any) => state.activitiesComponentsData);
   const { loading, data } = activitiesComponentsData;
@@ -23,7 +20,7 @@ export const Activities: React.FC<Editable> = (props) => {
   if (!loading) {
     let ActivitiesCardsArray: any = [];
     data.forEach((elem: ActivitiesData) => {
-      ActivitiesCardsArray.push(<ActivitiesCard _id={elem._id} key={elem._id} imagePath={elem.imagePath} textContent={elem.textContent} editable={props.editable} />)
+      ActivitiesCardsArray.push(<ActivitiesCard _id={elem._id} key={elem._id} imagePath={elem.imagePath} textContent={elem.textContent} />)
     });
     return (
       <section id="activities">

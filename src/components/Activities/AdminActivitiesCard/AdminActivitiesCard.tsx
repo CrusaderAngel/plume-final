@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchAllActivitiesComponentsData } from '../../../redux/actions/activitiesActions';
-import '/AdminActivitiesCard';
+import React, { useState } from 'react';
+import './AdminActivitiesCard.css';
 import { ActivitiesData } from '../ActivitiesCard/ActivitiesCard';
 import { FormEvent } from 'react';
 
 export const AdminActivitiesCard: React.FC<ActivitiesData> = (data: ActivitiesData) => {
-  const { _id, imagePath, textContent, editable } = data;
+  const { _id, imagePath, textContent } = data;
   const [source, setSource] = useState(imagePath);
   const [text, setText] = useState(textContent);
 
