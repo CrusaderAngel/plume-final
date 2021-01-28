@@ -43,14 +43,14 @@ export const Navbar: React.FC<any> = (props) => {
 
       <div className={`${hidden} sidebar`}>
         <img src={logo} alt="" id="sidebar-logo" />
-        <a href="#about" className="sidebar-link">Кто такая</a>
-        <a href="#use" className="sidebar-link">Чем полезна</a>
-        <a href="#hook" className="sidebar-link">В чем фишка</a>
-        <a href="#workflow" className="sidebar-link">Как проходит </a>
-        <a href="#cost" className="sidebar-link">Стоимость</a>
-        <a href="#FAQ" className="sidebar-link">Вопросы</a>
-        <a href="#footer" className="sidebar-link">Контакты</a>
-        <a href="#feedback" className="sidebar-link">Отзывы</a>
+        <a href="#about" className="sidebar-link" onClick={() => handleClick()}>Кто такая</a>
+        <a href="#use" className="sidebar-link" onClick={() => handleClick()}>Чем полезна</a>
+        <a href="#hook" className="sidebar-link" onClick={() => handleClick()}>В чем фишка</a>
+        <a href="#workflow" className="sidebar-link" onClick={() => handleClick()}>Как проходит </a>
+        <a href="#cost" className="sidebar-link" onClick={() => handleClick()}>Стоимость</a>
+        <a href="#FAQ" className="sidebar-link" onClick={() => handleClick()}>Вопросы</a>
+        <a href="#footer" className="sidebar-link" onClick={() => handleClick()}>Контакты</a>
+        <a href="#feedback" className="sidebar-link" onClick={() => handleClick()}>Отзывы</a>
         <div id="social-links-wrapper">
           <a className="sidebar-social-link-wrapper" href="//www.instagram.com/maria_gomanko/" target="__blank">
             <img src={insta} alt="insta" className="sidebar-social-link" />
