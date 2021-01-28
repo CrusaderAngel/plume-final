@@ -27,10 +27,18 @@ export const Contacts: React.FC = () => {
           <p className="contacts-text">@maria_gomanko</p>
 
           <div className="contacts-logos">
-            <img className="footer-logos" src={insta} alt="" />
-            <img className="footer-logos" src={whatsapp} alt="" />
-            <img className="footer-logos" src={vk} alt="" />
-            <img className="footer-logos" id="teleg-logo" src={telega} alt="" />
+            <a href="//www.instagram.com/maria_gomanko/" target="__blank">
+              <img className="footer-logos" src={insta} alt="" />
+            </a>
+            <a href="//wa.me/79775229861" target="__blank">
+              <img className="footer-logos" src={whatsapp} alt="" />
+            </a>
+            <a href="//vk.com/maria_plume" target="__blank">
+              <img className="footer-logos" src={vk} alt="" />
+            </a>
+            <a href="//telegram.im/@mariaplume" target="__blank">
+              <img className="footer-logos" id="teleg-logo" src={telega} alt="" />
+            </a>
           </div>
         </div>
       </div>
