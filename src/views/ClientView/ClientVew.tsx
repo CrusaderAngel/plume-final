@@ -53,20 +53,20 @@ export const ClientView: React.FC = () => {
 
   return (
     <>
-      {/*SVG GROUP START*/}
-      <BackSVG />
-      <FirstLineSVG />
-      <SpineSVG />
-      <HandsSVG />
-      <SecondLineSVG />
-      <LegsSVG />
-      <ThirdLineSVG />
-      {/*SVG GROUP END*/}
 
       {/*MAIN GROUP START*/}
       <Navbar switchBlurred={switchBlurred} desktopSidebarToggle={desktopSidebarToggle} />
       {/* SIDEBAR */}
       <div id="main-wrapper" className={''}>
+        {/*SVG GROUP START*/}
+        <BackSVG />
+        <FirstLineSVG />
+        <SpineSVG />
+        <HandsSVG />
+        <SecondLineSVG />
+        <LegsSVG />
+        <ThirdLineSVG />
+        {/*SVG GROUP END*/}
         <HomePage />
         <About />
         <Use />

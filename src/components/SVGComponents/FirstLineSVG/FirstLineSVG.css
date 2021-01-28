@@ -41,3 +41,22 @@
 .f6d34634-2e5b-414c-a498-6f8e3a3d2b26 {
   fill: #797979;
 }
+
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #firstLineSVGGroup {
+    display: none;
+  }
+}
+
+
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) { 
+  #firstLineSVGGroup {
+    display: none;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-device-height: 320px) and (max-device-height: 500px) { 
+  #firstLineSVGGroup {
+    top: 100em;
+  }
+}

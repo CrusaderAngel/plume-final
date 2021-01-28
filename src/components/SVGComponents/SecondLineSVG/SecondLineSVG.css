@@ -41,3 +41,17 @@
 .aa7bd1a7-e9ce-44c8-9f3e-a8ebc762637e {
   fill: silver;
 }
+
+
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #secondLineSVGGroup {
+    display: none;
+  }
+}
+
+
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) { 
+  #secondLineSVGGroup {
+    display: none;
+  }
+}

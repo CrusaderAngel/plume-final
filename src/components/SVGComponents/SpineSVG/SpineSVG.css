@@ -421,3 +421,18 @@
 .eb797196-e688-4348-876f-51881190559b {
   fill: #a2a2a2;
 }
+
+
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #spineSVGGroup {
+    display: none;
+  }
+}
+
+
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) { 
+  #spineSVGGroup {
+    display: none;
+  }
+}
+

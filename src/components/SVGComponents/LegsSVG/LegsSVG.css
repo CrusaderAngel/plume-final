@@ -345,3 +345,17 @@
 .a68ceeaa-1d87-4bb6-bd55-ff12bbd324d1 {
   fill: #9b9b9b;
 }
+
+
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #legsSVGGroup {
+    display: none;
+  }
+}
+
+
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) { 
+  #legsSVGGroup {
+    display: none;
+  }
+}

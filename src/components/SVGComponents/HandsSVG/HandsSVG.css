@@ -293,3 +293,24 @@
 .bbcf8876-4fe2-4977-adfa-72446ac28537 {
   fill: #c6c6c6; 
 }
+
+
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #handsSVGGroup {
+    display: none;
+  }
+}
+
+
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) { 
+  #handsSVGGroup {
+    display: none;
+  }
+}
+
+
+@media only screen and (orientation: landscape) and (min-device-height: 320px) and (max-device-height: 500px) { 
+  #handsSVGGroup {
+    top: 280.5em;;
+  }
+}
