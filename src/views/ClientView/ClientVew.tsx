@@ -9,13 +9,13 @@ import HomePage from '../../components/HomePage';
 import Hook from '../../components/Hook';
 import Navbar from '../../components/Navbar';
 import Quote from '../../components/Quote';
-// import BackSVG from '../../components/SVGComponents/BackSVG';
-// import FirstLineSVG from '../../components/SVGComponents/FirstLineSVG';
-// import HandsSVG from '../../components/SVGComponents/HandsSVG';
-// import LegsSVG from '../../components/SVGComponents/LegsSVG';
-// import SecondLineSVG from '../../components/SVGComponents/SecondLineSVG';
-// import SpineSVG from '../../components/SVGComponents/SpineSVG';
-// import ThirdLineSVG from '../../components/SVGComponents/ThirdLineSVG';
+import BackSVG from '../../components/SVGComponents/BackSVG';
+import FirstLineSVG from '../../components/SVGComponents/FirstLineSVG';
+import HandsSVG from '../../components/SVGComponents/HandsSVG';
+import LegsSVG from '../../components/SVGComponents/LegsSVG';
+import SecondLineSVG from '../../components/SVGComponents/SecondLineSVG';
+import SpineSVG from '../../components/SVGComponents/SpineSVG';
+import ThirdLineSVG from '../../components/SVGComponents/ThirdLineSVG';
 import Use from '../../components/Use';
 import Workflow from '../../components/Workflow';
 
@@ -54,13 +54,13 @@ export const ClientView: React.FC = () => {
   return (
     <>
       {/*SVG GROUP START*/}
-      {/* <BackSVG />
+      <BackSVG />
       <FirstLineSVG />
       <SpineSVG />
       <HandsSVG />
       <SecondLineSVG />
       <LegsSVG />
-      <ThirdLineSVG /> */}
+      <ThirdLineSVG />
       {/*SVG GROUP END*/}
 
       {/*MAIN GROUP START*/}
