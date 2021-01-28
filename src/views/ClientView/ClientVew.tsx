@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import About from '../../components/About';
-import Activities from '../../components/Activities';
+import Activities from '../../components/Activities/Activities';
 import Contacts from '../../components/Contacts';
-import Cost from '../../components/Cost';
+import Cost from '../../components/Cost/Cost';
 import FAQ from '../../components/FAQ';
-import Feedback from '../../components/Feedback';
+import Feedback from '../../components/Feedback/Feedback';
 import HomePage from '../../components/HomePage';
 import Hook from '../../components/Hook';
 import Navbar from '../../components/Navbar';

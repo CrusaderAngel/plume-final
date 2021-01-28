@@ -1,0 +1,48 @@
+
+
+#admin-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+#left-panel{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  background-color: #4A6FDD;
+}
+
+
+#admin-logo {
+  height: auto;
+  width: 10em;
+  margin-bottom: 2em;
+  filter: invert(1) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+
+#left-panel > * {
+  color:white;
+  margin: 2em 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+#left-panel > * > p {
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+#left-panel > * > p:hover {
+  cursor: pointer;
+  color: rgb(206, 204, 204);
+}

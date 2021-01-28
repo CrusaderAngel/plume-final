@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchAllFeedbackComponentsData } from '../../redux/actions/feedbackActions';
-import ProfiWidget from '../ProfiWidget';
+import { fetchAllFeedbackComponentsData } from '../../../redux/actions/feedbackActions';
+import ProfiWidget from '../../ProfiWidget';
 import './Feedback.css';
-import hendrick from '../../img/assets/feedback/static/static1.png';
-import julia from '../../img/assets/feedback/static/static2.png';
-import lyudmila from '../../img/assets/feedback/static/static3.png';
+import hendrick from '../../../img/assets/feedback/static/static1.png';
+import julia from '../../../img/assets/feedback/static/static2.png';
+import lyudmila from '../../../img/assets/feedback/static/static3.png';
 
 
 export const Feedback: React.FC = () => {

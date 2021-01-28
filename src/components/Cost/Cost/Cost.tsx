@@ -1,11 +1,11 @@
 import React, { MouseEvent } from 'react';
-import { fetchAllCostComponentsData } from '../../redux/actions/costActions';
+import { fetchAllCostComponentsData } from '../../../redux/actions/costActions';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import Loader from '../Loader';
-import virt from '../../img/assets/cost/virt.jpg';
-import one from '../../img/assets/cost/one.jpg';
-import diagnosis from '../../img/assets/cost/diagnosis.jpg';
+import Loader from '../../Loader';
+import virt from '../../../img/assets/cost/virt.jpg';
+import one from '../../../img/assets/cost/one.jpg';
+import diagnosis from '../../../img/assets/cost/diagnosis.jpg';
 import './Cost.css';
 
 

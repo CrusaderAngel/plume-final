@@ -1,16 +1,24 @@
 import React from 'react';
-import Activities from '../../components/Activities';
-import Cost from '../../components/Cost';
-import Feedback from '../../components/Feedback';
+import logo from '../../img/assets/logo.svg';
+
 
 import './AdminView.css';
 
-export const AdminView:React.FC = () => {
-  return(
+export const AdminView: React.FC = () => {
+  return (
     <>
-    <Activities editable={true}/>
-    <Cost />
-    <Feedback />
+      <div id="admin-wrapper">
+        <div id="left-panel">
+          <div id="left-panel-content">
+            <img src={logo} id="admin-logo" alt="logo" />
+            <p>С чем помогаю</p>
+            <p>Сколько стоит</p>
+            <p>Отзывы</p>
+          </div>
+          <div id="window">
+          </div>
+        </div>
+      </div>
     </>
   );
 }

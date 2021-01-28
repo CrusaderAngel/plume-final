@@ -1,11 +1,11 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchAllActivitiesComponentsData } from '../../redux/actions/activitiesActions';
+import { fetchAllActivitiesComponentsData } from '../../../redux/actions/activitiesActions';
 import './Activities.css';
 import { useEffect } from 'react';
-import ActivitiesCard from './ActivitiesCard';
-import { ActivitiesData } from './ActivitiesCard/ActivitiesCard';
-import Loader from '../Loader';
+import ActivitiesCard from '../ActivitiesCard';
+import { ActivitiesData } from '../ActivitiesCard/ActivitiesCard';
+import Loader from '../../Loader';
 
 type Editable = { editable: boolean }
 
