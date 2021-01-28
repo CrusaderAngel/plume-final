@@ -1,6 +1,6 @@
 import React, { MouseEvent } from 'react';
 import { fetchAllCostComponentsData } from '../../redux/actions/costActions';
-import { DefaultRootState, useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import Loader from '../Loader';
 import virt from '../../img/assets/cost/virt.jpg';
@@ -43,7 +43,7 @@ export const Cost: React.FC = () => {
   }, [dispatch]
   );
 
-  if (!data) {
+  if (loading) {
     return (
       <Loader />
     )

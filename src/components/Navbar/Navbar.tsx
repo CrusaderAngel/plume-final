@@ -52,16 +52,16 @@ export const Navbar: React.FC<any> = (props) => {
         <a href="#footer" className="sidebar-link">Контакты</a>
         <a href="#feedback" className="sidebar-link">Отзывы</a>
         <div id="social-links-wrapper">
-          <a className="sidebar-social-link-wrapper" href="">
+          <a className="sidebar-social-link-wrapper" href="//www.instagram.com/maria_gomanko/" target="__blank">
             <img src={insta} alt="insta" className="sidebar-social-link" />
           </a>
-          <a className="sidebar-social-link-wrapper" href="">
+          <a className="sidebar-social-link-wrapper" href="//wa.me/79775229861" target="__blank">
             <img src={whatsapp} alt="whatsapp" className="sidebar-social-link" />
           </a>
-          <a className="sidebar-social-link-wrapper" href="">
+          <a className="sidebar-social-link-wrapper" href="//vk.com/maria_plume" target="__blank">
             <img src={vk} alt="vk" className="sidebar-social-link" />
           </a>
-          <a className="sidebar-social-link-wrapper" href="">
+          <a className="sidebar-social-link-wrapper" href="//telegram.im/@mariaplume" target="__blank">
             <img src={telega} alt="telega" className="sidebar-social-link" id="telegram-social" />
           </a>
         </div>

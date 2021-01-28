@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { DefaultRootState, useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchAllFeedbackComponentsData } from '../../redux/actions/feedbackActions';
 import ProfiWidget from '../ProfiWidget';
 import './Feedback.css';
@@ -11,7 +11,7 @@ import lyudmila from '../../img/assets/feedback/static/static3.png';
 export const Feedback: React.FC = () => {
   const dispatch = useDispatch();
   const feedbackComponentsData = useSelector((state: any) => state.feedbackComponentsData);
-  const { loading, data } = feedbackComponentsData;
+  const { data } = feedbackComponentsData;
 
   useEffect(() => {
     dispatch(fetchAllFeedbackComponentsData());

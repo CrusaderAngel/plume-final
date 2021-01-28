@@ -7,7 +7,7 @@ export const costComponentsDataReducer = (state = {loading: true, data: []}, act
       return {loading: true};
 
     case COST_LIST_SUCCESS:
-      return {loading: true,
+      return {loading: false,
       data:action.payload.data};
     
     case COST_LIST_FAIL:

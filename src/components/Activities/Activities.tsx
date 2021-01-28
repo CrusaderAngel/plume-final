@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultRootState, useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchAllActivitiesComponentsData } from '../../redux/actions/activitiesActions';
 import './Activities.css';
 import { useEffect } from 'react';

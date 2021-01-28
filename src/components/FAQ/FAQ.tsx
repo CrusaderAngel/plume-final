@@ -2,7 +2,7 @@ import React from 'react';
 import './FAQ.css';
 
 export const FAQ: React.FC = () => {
-  return(
+  return (
     <section id="FAQ">
       <h2 id="section-header">ВОПРОСЫ</h2>
       <div className="faq-block">
@@ -30,7 +30,7 @@ export const FAQ: React.FC = () => {
         <p className="faq-answer">
           Я работаю официально, это моя безопасность. Я не несу
           ответственность за вашу жизнь, и в договоре указаны
-          противопозакания. <a id="contract-example" href="">Вот</a> пример
+          противопозакания. <a id="contract-example" href="./" target="__blank">Вот</a> пример
           договора.
         </p>
       </div>

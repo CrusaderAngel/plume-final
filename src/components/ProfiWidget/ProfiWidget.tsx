@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { DefaultRootState, useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchAllRatingComponentsData } from '../../redux/actions/ratingActions';
 import './ProfiWidget.css';
 import star from '../../img/assets/widget/profi.ru/star.svg';
@@ -21,7 +21,7 @@ export const ProfiWidget: React.FC<Props> = () => {
   );
 
 
-  if (!data) {
+  if (loading) {
     return (null);
   } else {
     return (
@@ -30,7 +30,7 @@ export const ProfiWidget: React.FC<Props> = () => {
           <div className="widget-title">Отзывы учеников на PROFI.RU</div>
           <div className="widget-content">
             <button className="widget-button">
-              <a target="_blank" href="https://profi.ru/profile/GomankoMA2">Смотреть</a>
+              <a target="_blank" rel="noreferrer" href="https://profi.ru/profile/GomankoMA2">Смотреть</a>
             </button>
             <div className="widget-content-general">
               <div className="widget-content-text">
