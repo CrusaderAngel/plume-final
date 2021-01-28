@@ -1,6 +1,6 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { DefaultRootState, useDispatch, useSelector } from 'react-redux';
-import {fetchAllRatingComponentsData} from '../../redux/actions/ratingActions';
+import { fetchAllRatingComponentsData } from '../../redux/actions/ratingActions';
 import './ProfiWidget.css';
 import star from '../../img/assets/widget/profi.ru/star.svg';
 import plus from '../../img/assets/widget/profi.ru/plus.svg'
@@ -12,17 +12,20 @@ interface Props {
 
 export const ProfiWidget: React.FC<Props> = () => {
   const dispatch = useDispatch();
-  const ratingComponentsData = useSelector((state:any) => state.ratingComponentsData);
-  const {loading, data}= ratingComponentsData;
+  const ratingComponentsData = useSelector((state: any) => state.ratingComponentsData);
+  const { loading, data } = ratingComponentsData;
 
   useEffect(() => {
     dispatch(fetchAllRatingComponentsData());
-  },[dispatch]
+  }, [dispatch]
   );
 
 
-  return(
-    <div className="profi-widget-container">
+  if (!data) {
+    return (null);
+  } else {
+    return (
+      <div className="profi-widget-container">
         <div className="profi-widget">
           <div className="widget-title">Отзывы учеников на PROFI.RU</div>
           <div className="widget-content">
@@ -32,15 +35,16 @@ export const ProfiWidget: React.FC<Props> = () => {
             <div className="widget-content-general">
               <div className="widget-content-text">
                 <img className="widget-icons" src={star} alt="" />
-                <span id="star-text">5</span>
+                <span id="star-text">{data.rating}</span>
               </div>
               <div className="widget-content-text">
                 <img className="widget-icons" src={plus} alt="" />
-                <span id="mark-text">Очень хвалят</span>
+                <span id="mark-text">Отзывов: {data.reviews}</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-  );
+    );
+  }
 };
