@@ -1,5 +1,3 @@
-
-
 .admin-front-cards {
   position: relative;
   display: flex;
@@ -76,7 +74,7 @@
   cursor: default;
 }
 
-.admin-front-cards-additional-info{
+.admin-front-cards-additional-info {
   font-family: 'EB Garamond', serif;
   font-style: normal;
   color: #efefef;
@@ -107,14 +105,6 @@
   transition: opacity 2s ease-in-out;
 }
 
-
-.admin-activities-form-inputs {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .textarea-wrapper {
   display: flex;
   flex-direction: row;
@@ -126,32 +116,29 @@
   font-size: 1.8em;
 }
 
-
 .textarea-front-container {
   height: 100%;
-  width: 45%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.admin-front-textarea-element {
-  height: 45%;
+.admin-font-textarea-element {
+  height: 47%;
   width: 100%;
   resize: none;
   font-size: 0.5em
 }
 
 .textarea-back-container {
-  width: 50%;
   height: 100%;
+  width: 85%;
 }
 
 .admin-back-textarea-element {
   height: 100%;
   width: 100%;
   resize: none;
-  padding: 0.25em 0.25em;
-  font-size: 0.5em;
 }
