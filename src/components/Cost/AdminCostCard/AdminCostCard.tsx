@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CostCardData } from '../CostCard/CostCard'
 import './AdminCostCard.css';
 
 
 export const AdminCostCard: React.FC<CostCardData> = (props: CostCardData) => {
-
   const { _id, imagePath, titleText, price, additionalInfo, data } = props;
+  const [newImage, setNewImage] = useState(imagePath);
+  const [newTitle, setTitle] = useState(titleText);
+  const [newPrice, setNewPrice] = useState(price);
+  const [newAdditionalInfo, setAdditionalInfo] = useState(additionalInfo);
+
 
   let fadeFront = document.querySelectorAll('.fade-in-out-admin-front');
   let fadeBack = document.querySelectorAll('.fade-in-out-admin-back');
@@ -38,18 +42,18 @@ export const AdminCostCard: React.FC<CostCardData> = (props: CostCardData) => {
   return (
     <div className="admin-card-wrapper">
       <div className="admin-front-cards" id={_id}>
-        <img className="admin-front-card-img" src={imagePath} alt="virtual" />
+        <img className="admin-front-card-img" src={newImage} alt="virtual" />
         <div className="admin-front-cards-text">
           <div className="fade-in-out-admin-front">
-            <h3 className="admin-front-cards-title">{titleText}</h3>
-            <p className="admin-front-cards-price">{price}</p>
+            <h3 className="admin-front-cards-title">{newTitle}</h3>
+            <p className="admin-front-cards-price">{newPrice}</p>
             <br />
           </div>
           <button className="admin-front-cards-button cost-button" data-id={data} onClick={event => handleClick(event)}>подробнее</button>
         </div>
 
         <div className="fade-in-out-admin-back admin-back-cards-text">
-          <p className="admin-front-cards-additional-info">{additionalInfo}</p>
+          <p className="admin-front-cards-additional-info">{newAdditionalInfo}</p>
         </div>
       </div>
 
@@ -58,27 +62,30 @@ export const AdminCostCard: React.FC<CostCardData> = (props: CostCardData) => {
         <div className="admin-activities-form-inputs">
           <div className="textarea-wrapper">
             <div className="textarea-front-container">
-              <textarea name="admin-activities-image-text" className="admin-font-textarea-element"
+              <textarea name="admin-activities-image-text" className="admin-front-textarea-element"
                 cols={30}
                 rows={10}
-              ></textarea>
-              <textarea name="admin-activities-image-text" className="admin-font-textarea-element"
+                placeholder="Название"
+                onChange={(event) => setTitle(event.target.value)}>{newTitle}</textarea>
+              <textarea name="admin-activities-image-text" className="admin-front-textarea-element"
                 cols={30}
                 rows={10}
-              ></textarea>
+                placeholder="Цена"
+                onChange={(event) => setNewPrice(event.target.value as unknown as number)}>{newPrice}</textarea>
             </div>
             <div className="textarea-back-container">
               <textarea name="admin-activities-image-text" className="admin-back-textarea-element"
                 cols={30}
                 rows={10}
-              ></textarea>
+                placeholder="Подробнее"
+                onChange={(event) => setAdditionalInfo(event.target.value)}>{newAdditionalInfo}</textarea>
             </div>
           </div>
           <input type="text" className="admin-activities-input" placeholder="Вставьте ссылку на фото" />
-          <div className="admin-activities-form-buttons">
-            <button type="submit" className="btn btn-success">Сохранить</button>
-            <button type="submit" className="btn btn-danger">Удалить</button>
-          </div>
+        </div>
+        <div className="admin-activities-form-buttons">
+          <button type="submit" className="btn btn-success">Сохранить</button>
+          <button type="submit" className="btn btn-danger">Удалить</button>
         </div>
       </form>
     </div>

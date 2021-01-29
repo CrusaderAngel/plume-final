@@ -108,12 +108,19 @@
 }
 
 
+.admin-activities-form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .textarea-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 100%;
   height: 70%;
   resize: none;
   font-size: 1.8em;
@@ -129,14 +136,22 @@
   align-items: center;
 }
 
-.admin-font-textarea-element {
+.admin-front-textarea-element {
   height: 45%;
-  width: 50%;
+  width: 100%;
   resize: none;
+  font-size: 0.5em
+}
+
+.textarea-back-container {
+  width: 50%;
+  height: 100%;
 }
 
 .admin-back-textarea-element {
-  height: 45%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
   resize: none;
+  padding: 0.25em 0.25em;
+  font-size: 0.5em;
 }

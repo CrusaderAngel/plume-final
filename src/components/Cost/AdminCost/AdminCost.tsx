@@ -27,6 +27,7 @@ export const AdminCost: React.FC = () => {
     })
     return (
       <>
+        <h2 id="section-header">СКОЛЬКО СТОИТ</h2>
         {adminCostArray}
       </>
     );
