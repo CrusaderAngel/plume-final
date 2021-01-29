@@ -1,4 +1,4 @@
-#firstLineSVGGroup{
+#firstLineSVGGroup {
   position: absolute;
   top: 102em;
   left: 1.5em;
@@ -42,20 +42,25 @@
   fill: #797979;
 }
 
+@media only screen and (min-device-width: 2020px) {
+  #firstLineSVGGroup {
+    display: none;
+  }
+}
+
 @media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1024px) {
   #firstLineSVGGroup {
     display: none;
   }
 }
 
-
-@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) { 
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
   #firstLineSVGGroup {
     display: none;
   }
 }
 
-@media only screen and (orientation: landscape) and (min-device-height: 320px) and (max-device-height: 500px) { 
+@media only screen and (orientation: landscape) and (min-device-height: 320px) and (max-device-height: 500px) {
   #firstLineSVGGroup {
     top: 100em;
   }

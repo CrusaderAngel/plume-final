@@ -9,7 +9,7 @@
 #e03b2c35-916c-4307-91f9-d45bffea04e9,
 #fb324562-6470-4587-b5ea-92dfce0525f9,
 #bf91c545-23ef-4e86-b239-745275cae392,
-#abf12cc4-528a-444d-a832-77e915182c70, 
+#abf12cc4-528a-444d-a832-77e915182c70,
 #a844f571-1063-4239-8ff9-b932a996f7f5 {
   /* opacity: 0;
   -webkit-transition: opacity 0.7s linear;
@@ -346,6 +346,11 @@
   fill: #c7c7c7;
 }
 
+@media only screen and (min-device-width: 2020px) {
+  #backSVGGroup {
+    display: none;
+  }
+}
 
 @media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1024px) {
   #backSVGGroup {
@@ -353,15 +358,13 @@
   }
 }
 
-
-@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) { 
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
   #backSVGGroup {
     display: none;
   }
 }
 
-
-@media only screen and (orientation: landscape) and (min-device-height: 320px) and (max-device-height: 500px) { 
+@media only screen and (orientation: landscape) and (min-device-height: 320px) and (max-device-height: 500px) {
   #backSVGGroup {
     top: 22em;
   }
