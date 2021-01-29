@@ -15,7 +15,7 @@ export const AdminActivitiesCard: React.FC<ActivitiesData> = (data: ActivitiesDa
 
 
   return (
-    <div className="admin-activities-card-wrapper">
+    <div className="admin-card-wrapper">
       <div id={_id} className="admin-activities-cell">
         <img src={source} alt="" className="admin-activities-cell-image" />
         <p className="admin-activities-cell-text">{text}</p>
