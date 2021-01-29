@@ -123,11 +123,8 @@ export const Feedback: React.FC = () => {
 
       <div className="feedback-active">
         <div className="first-column">
-          <div className="bubble-text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus reiciendis expedita sapiente culpa eos numquam
-            dignissimos magnam dolor veritatis quia debitis consectetur animi
-            cum
+          <div className="bubble-img">
+            <img className="bubble-img-content" src={hendrick} alt="" />
           </div>
         </div>
 
@@ -135,31 +132,17 @@ export const Feedback: React.FC = () => {
           <div className="bubble-img">
             <img className="bubble-img-content" src={hendrick} alt="" />
           </div>
-          <div className="bubble-text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus reiciendis expedita sapiente culpa eos numquam
-            dignissimos magnam dolor veritatis quia debitis consectetur animi
-            cum
-          </div>
         </div>
 
         <div className="third-column">
-          <div className="bubble-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-            cupiditate repellat voluptatum aliquid doloremque quibusdam
-            ducimus, quod harum dignissimos dolores numquam modi
-            exercitationem natus dolorem sint. Laudantium nam possimus modi!
-            Eveniet vel nihil iste veritatis reprehenderit consequatur
-            provident expedita. Ipsam culpa neque sit nostrum modi nemo
-            delectus, officiis voluptates vero minima quod iste incidunt quis
-            quia sunt
+          <div className="bubble-img">
+            <img className="bubble-img-content" src={hendrick} alt="" />
           </div>
         </div>
 
         <div className="fourth-column">
-          <div className="bubble-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-            cupiditate repellat voluptatum aliquid doloremque quibusdam
+          <div className="bubble-img">
+            <img className="bubble-img-content" src={hendrick} alt="" />
           </div>
           <div className="bubble-img">
             <img className="bubble-img-content" src={hendrick} alt="" />
