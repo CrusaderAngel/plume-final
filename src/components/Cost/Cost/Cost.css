@@ -47,7 +47,7 @@
   top: 57%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  z-index: 2;
   text-align: center;
   white-space: nowrap;
 }
@@ -96,8 +96,16 @@
   font-style: normal;
   color: #efefef;
   font-size: 2.25em;
-
   cursor: default;
+}
+
+.front-cards-additional-info{
+  font-family: 'EB Garamond', serif;
+  font-style: normal;
+  color: #efefef;
+  font-size: 1.25em;
+  cursor: default;
+  padding: 0 0.5em;
 }
 
 .front-cards-button {
@@ -179,4 +187,15 @@
   .front-cards-button {
     font-size: 6em;
   }
+
+
+  .front-cards-additional-info{
+    font-family: 'EB Garamond', serif;
+    font-style: normal;
+    color: #efefef;
+    font-size: 4em;
+    cursor: default;
+    padding: 0 0.5em;
+  }
+  
 }
