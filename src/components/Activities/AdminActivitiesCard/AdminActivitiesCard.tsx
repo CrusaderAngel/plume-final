@@ -10,6 +10,7 @@ export const AdminActivitiesCard: React.FC<ActivitiesData> = (data: ActivitiesDa
 
   const submitHandler = (event: FormEvent) => {
     event.preventDefault();
+    console.log(_id, source, text);
   }
 
 
@@ -30,7 +31,7 @@ export const AdminActivitiesCard: React.FC<ActivitiesData> = (data: ActivitiesDa
           <input type="text" className="admin-activities-input" placeholder="Вставьте ссылку на фото" onChange={(e) => setSource(e.target.value)} />
         </div>
         <div className="admin-activities-form-buttons">
-          <button type="submit" className="btn btn-success">Сохранить</button>
+          <button type="submit" className="btn btn-success" onClick={event => submitHandler(event)}>Сохранить</button>
           <button type="submit" className="btn btn-danger">Удалить</button>
         </div>
       </form>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { FormEvent, useState } from 'react';
 import { CostCardData } from '../CostCard/CostCard'
 import './AdminCostCard.css';
 
@@ -13,6 +13,13 @@ export const AdminCostCard: React.FC<CostCardData> = (props: CostCardData) => {
 
   let fadeFront = document.querySelectorAll('.fade-in-out-admin-front');
   let fadeBack = document.querySelectorAll('.fade-in-out-admin-back');
+
+  const submitHandler = (event: FormEvent) => {
+    event.preventDefault();
+    console.log(_id, newImage, newTitle, newPrice, newAdditionalInfo);
+  }
+
+
 
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     const id = (event.target as HTMLButtonElement).dataset.id;
@@ -84,7 +91,7 @@ export const AdminCostCard: React.FC<CostCardData> = (props: CostCardData) => {
           <input type="text" className="admin-activities-input" placeholder="Вставьте ссылку на фото" />
         </div>
         <div className="admin-activities-form-buttons">
-          <button type="submit" className="btn btn-success">Сохранить</button>
+          <button type="submit" className="btn btn-success" onClick={event => submitHandler(event)}>Сохранить</button>
           <button type="submit" className="btn btn-danger">Удалить</button>
         </div>
       </form>
