@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BubbleData } from '../FeedbackBubbleElement/FeedbackBubbleElement';
 import noimage from '../../../img/assets/noimage.png';
 import AdminFeedbackBubbleElement from '../AdminFeedbackBubbleElement';
+import './AdminFeedbackColumn.css';
 
 export type ColumnData = {
   columnClass: string,
@@ -21,7 +22,7 @@ export const AdminFeedbackColumn: React.FC<ColumnData> = (props: ColumnData) => 
   return (
     <div className={columnClass}>
       {columnElements}
-      <div className="btn btn-info" onClick={() => handleClick()}>Добавить элемент</div>
+      <div className="btn btn-info column-button" onClick={() => handleClick()}>Добавить элемент</div>
     </div>
   );
 };

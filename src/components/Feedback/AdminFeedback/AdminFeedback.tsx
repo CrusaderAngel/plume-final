@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAllFeedbackComponentsData } from '../../../redux/actions/feedbackActions';
 import Loader from '../../Loader';
+import AdminFeedbackBubbleElement from '../AdminFeedbackBubbleElement';
 import AdminFeedbackColumn from '../AdminFeedbackColumn';
-import { BubbleData, FeedbackBubbleElement } from '../FeedbackBubbleElement/FeedbackBubbleElement';
-import './AdminFeedback.css';
+import { BubbleData } from '../FeedbackBubbleElement/FeedbackBubbleElement';
 
 export const AdminFeedback: React.FC = () => {
   const dispatch = useDispatch();
@@ -25,16 +25,16 @@ export const AdminFeedback: React.FC = () => {
     data.forEach((elem: BubbleData) => {
       switch (elem.columnId) {
         case 1:
-          firstColumn.push(<FeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} />)
+          firstColumn.push(<AdminFeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} />)
           break
         case 2:
-          secondColumn.push(<FeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} />)
+          secondColumn.push(<AdminFeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} />)
           break
         case 3:
-          thirdColumn.push(<FeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} />)
+          thirdColumn.push(<AdminFeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} />)
           break
         case 4:
-          fourthColumn.push(<FeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} />)
+          fourthColumn.push(<AdminFeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} />)
           break
       }
     });

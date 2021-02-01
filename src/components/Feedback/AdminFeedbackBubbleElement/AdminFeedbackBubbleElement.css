@@ -1,14 +1,35 @@
 .admin-bubble-img {
   margin-bottom: 0.9em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .admin-bubble-img-content {
   max-width: 100%;
   max-height: 100%;
-
   border-radius: 0.9375em;
 }
 
+.admin-bubble-img-input{
+  width: 70%;
+  height: 2em;
+  margin: 1em auto;
+}
+
+.admin-bubble-img-buttons-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-bubble-img-button {
+  width: 49%;
+  font-size: 0.9em;
+}
 
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
 
