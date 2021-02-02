@@ -1,8 +1,8 @@
 import {applyMiddleware, combineReducers, createStore, compose} from 'redux';
 import thunk from 'redux-thunk';
-import { activitiesComponentsDataReducer } from './reducers/activitiesComponentsDataReducer';
-import {costComponentsDataReducer} from './reducers/costComponentsDataReducer';
-import { feedbackComponentsDataReducer } from './reducers/feedbackComponentsDataReducer';
+import { activitiesComponentDeleteDataReducer, activitiesComponentsDataReducer, activitiesComponentSendDataReducer } from './reducers/activitiesComponentsDataReducer';
+import {costComponentDeleteDataReducer, costComponentsDataReducer, costComponentSendDataReducer} from './reducers/costComponentsDataReducer';
+import { feedbackComponentDeleteDataReducer, feedbackComponentsDataReducer, feedbackComponentSendDataReducer } from './reducers/feedbackComponentsDataReducer';
 import {ratingComponentsDataReducer} from './reducers/ratingComponentsDataReducer';
 declare global {
   interface Window {
@@ -16,7 +16,13 @@ const reducer = combineReducers({
   activitiesComponentsData: activitiesComponentsDataReducer,
   costComponentsData:costComponentsDataReducer,
   feedbackComponentsData: feedbackComponentsDataReducer,
-  ratingComponentsData: ratingComponentsDataReducer
+  ratingComponentsData: ratingComponentsDataReducer,
+  sendActivitiesComponentDataStatus: activitiesComponentSendDataReducer,
+  deleteActivitiesComponentDataStatus: activitiesComponentDeleteDataReducer,
+  sendCostComponentsDataStatus: costComponentSendDataReducer,
+  deleteCostComponentDataStatus: costComponentDeleteDataReducer,
+  sendFeedbackComponentDataStatus: feedbackComponentSendDataReducer,
+  deleteFeedbackComponentDataStatus: feedbackComponentDeleteDataReducer
 });
 
 const composeEnhancers =

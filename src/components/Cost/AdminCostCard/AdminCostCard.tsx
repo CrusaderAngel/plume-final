@@ -1,9 +1,12 @@
 import React, { FormEvent, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { deleteCostComponentData, sendCostComponentData } from '../../../redux/actions/costActions';
 import { CostCardData } from '../CostCard/CostCard'
 import './AdminCostCard.css';
 
 
 export const AdminCostCard: React.FC<CostCardData> = (props: CostCardData) => {
+  const dispatch = useDispatch();
   const { _id, imagePath, titleText, price, additionalInfo, data } = props;
   const [newImage, setNewImage] = useState(imagePath);
   const [newTitle, setTitle] = useState(titleText);
@@ -16,7 +19,12 @@ export const AdminCostCard: React.FC<CostCardData> = (props: CostCardData) => {
 
   const submitHandler = (event: FormEvent) => {
     event.preventDefault();
-    console.log(_id, newImage, newTitle, newPrice, newAdditionalInfo);
+    dispatch(sendCostComponentData(_id, newImage, newTitle, newPrice, newAdditionalInfo));
+  }
+
+  const deleteHandler = (event: FormEvent) => {
+    event.preventDefault();
+    dispatch(deleteCostComponentData(_id))
   }
 
 
@@ -92,7 +100,7 @@ export const AdminCostCard: React.FC<CostCardData> = (props: CostCardData) => {
         </div>
         <div className="admin-activities-form-buttons">
           <button type="submit" className="btn btn-success" onClick={event => submitHandler(event)}>Сохранить</button>
-          <button type="submit" className="btn btn-danger">Удалить</button>
+          <button type="submit" className="btn btn-danger" onClick={event => deleteHandler(event)}>Удалить</button>
         </div>
       </form>
     </div>

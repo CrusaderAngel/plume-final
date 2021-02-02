@@ -2,16 +2,25 @@ import React, { useState } from 'react';
 import './AdminActivitiesCard.css';
 import { ActivitiesData } from '../ActivitiesCard/ActivitiesCard';
 import { FormEvent } from 'react';
+import { useDispatch } from 'react-redux';
+import { deleteActivitiesComponentData, sendActivitiesComponentData } from '../../../redux/actions/activitiesActions';
 
 export const AdminActivitiesCard: React.FC<ActivitiesData> = (data: ActivitiesData) => {
+  const dispatch = useDispatch();
   const { _id, imagePath, textContent } = data;
   const [source, setSource] = useState(imagePath);
   const [text, setText] = useState(textContent);
 
   const submitHandler = (event: FormEvent) => {
     event.preventDefault();
-    console.log(_id, source, text);
+    dispatch(sendActivitiesComponentData(_id, source, text));
   }
+
+  const deleteHandler = (event: FormEvent) => {
+    event.preventDefault();
+    dispatch(deleteActivitiesComponentData(_id));
+  }
+
 
   return (
     <div className="admin-card-wrapper">
@@ -30,7 +39,7 @@ export const AdminActivitiesCard: React.FC<ActivitiesData> = (data: ActivitiesDa
         </div>
         <div className="admin-activities-form-buttons">
           <button type="submit" className="btn btn-success" onClick={event => submitHandler(event)}>Сохранить</button>
-          <button type="submit" className="btn btn-danger">Удалить</button>
+          <button type="submit" className="btn btn-danger" onClick={(event) => deleteHandler(event)}>Удалить</button>
         </div>
       </form>
     </div>
