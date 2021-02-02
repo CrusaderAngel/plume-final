@@ -4,6 +4,7 @@ import { fetchAllActivitiesComponentsData } from '../../../redux/actions/activit
 import Loader from '../../Loader';
 import { ActivitiesData } from '../ActivitiesCard/ActivitiesCard';
 import AdminActivitiesCard from '../AdminActivitiesCard';
+import AdminActivitiesCardWrapper from '../AdminActivitiesCardWrapper';
 import './AdminActivities.css';
 
 export const AdminActivities: React.FC = () => {
@@ -24,7 +25,7 @@ export const AdminActivities: React.FC = () => {
     return (
       <>
         <h2 id="section-header">С ЧЕМ ПОМОГАЮ</h2>
-        {ActivitiesCardsArray}
+        <AdminActivitiesCardWrapper elements={ActivitiesCardsArray} />
       </>
     );
   } else {

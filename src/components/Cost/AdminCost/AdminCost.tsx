@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchAllCostComponentsData } from '../../../redux/actions/costActions';
 import Loader from '../../Loader';
 import AdminCostCard from '../AdminCostCard';
+import AdminCostCardWrapper from '../AdminCostCardWrapper';
 import { CostCardData } from '../CostCard/CostCard'
 import './AdminCost.css';
 
@@ -28,7 +29,7 @@ export const AdminCost: React.FC = () => {
     return (
       <>
         <h2 id="section-header">СКОЛЬКО СТОИТ</h2>
-        {adminCostArray}
+        <AdminCostCardWrapper elements={adminCostArray} />
       </>
     );
   }

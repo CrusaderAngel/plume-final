@@ -13,8 +13,6 @@ export const AdminActivitiesCard: React.FC<ActivitiesData> = (data: ActivitiesDa
     console.log(_id, source, text);
   }
 
-
-
   return (
     <div className="admin-card-wrapper">
       <div id={_id} className="admin-activities-cell">

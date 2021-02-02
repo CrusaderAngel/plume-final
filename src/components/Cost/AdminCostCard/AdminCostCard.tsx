@@ -88,7 +88,7 @@ export const AdminCostCard: React.FC<CostCardData> = (props: CostCardData) => {
                 onChange={(event) => setAdditionalInfo(event.target.value)}>{newAdditionalInfo}</textarea>
             </div>
           </div>
-          <input type="text" className="admin-activities-input" placeholder="Вставьте ссылку на фото" />
+          <input type="text" className="admin-activities-input" placeholder="Вставьте ссылку на фото" onChange={event => setNewImage(event.target.value)} />
         </div>
         <div className="admin-activities-form-buttons">
           <button type="submit" className="btn btn-success" onClick={event => submitHandler(event)}>Сохранить</button>
