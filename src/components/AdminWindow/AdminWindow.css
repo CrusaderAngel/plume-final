@@ -8,3 +8,11 @@
   justify-content: center;
   align-items: center;
 }
+
+/* Mobile portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+  #admin-window {
+    margin-left: 0;
+    width: 100%;
+  }
+}
