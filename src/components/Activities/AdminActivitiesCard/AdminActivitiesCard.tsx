@@ -34,7 +34,7 @@ export const AdminActivitiesCard: React.FC<ActivitiesData> = (data: ActivitiesDa
             id={`text${_id}`}
             cols={30}
             rows={10}
-            onChange={(e) => setText(e.target.value)}>{text}</textarea>
+            onChange={(e) => setText(e.target.value)} value={text}></textarea>
           <input type="text" className="admin-activities-input" placeholder="Вставьте ссылку на фото" onChange={(e) => setSource(e.target.value)} />
         </div>
         <div className="admin-activities-form-buttons">

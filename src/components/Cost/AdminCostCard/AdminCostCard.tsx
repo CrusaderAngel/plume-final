@@ -81,19 +81,19 @@ export const AdminCostCard: React.FC<CostCardData> = (props: CostCardData) => {
                 cols={30}
                 rows={10}
                 placeholder="Название"
-                onChange={(event) => setTitle(event.target.value)}>{newTitle}</textarea>
+                onChange={(event) => setTitle(event.target.value)} value={newTitle}></textarea>
               <textarea name="admin-activities-image-text" className="admin-front-textarea-element"
                 cols={30}
                 rows={10}
                 placeholder="Цена"
-                onChange={(event) => setNewPrice(event.target.value as unknown as number)}>{newPrice}</textarea>
+                onChange={(event) => setNewPrice(event.target.value as unknown as number)} value={newPrice}></textarea>
             </div>
             <div className="textarea-back-container">
               <textarea name="admin-activities-image-text" className="admin-back-textarea-element"
                 cols={30}
                 rows={10}
                 placeholder="Подробнее"
-                onChange={(event) => setAdditionalInfo(event.target.value)}>{newAdditionalInfo}</textarea>
+                onChange={(event) => setAdditionalInfo(event.target.value)} value={newAdditionalInfo}></textarea>
             </div>
           </div>
           <input type="text" className="admin-activities-input" placeholder="Вставьте ссылку на фото" onChange={event => setNewImage(event.target.value)} />

@@ -25,16 +25,16 @@ export const AdminFeedback: React.FC = () => {
     data.forEach((elem: BubbleData) => {
       switch (elem.columnId) {
         case 1:
-          firstColumn.push(<AdminFeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} />)
+          firstColumn.push(<AdminFeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} key={elem._id} />)
           break
         case 2:
-          secondColumn.push(<AdminFeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} />)
+          secondColumn.push(<AdminFeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} key={elem._id} />)
           break
         case 3:
-          thirdColumn.push(<AdminFeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} />)
+          thirdColumn.push(<AdminFeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} key={elem._id} />)
           break
         case 4:
-          fourthColumn.push(<AdminFeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} />)
+          fourthColumn.push(<AdminFeedbackBubbleElement _id={elem._id} imagePath={elem.imagePath} columnId={elem.columnId} key={elem._id} />)
           break
       }
     });

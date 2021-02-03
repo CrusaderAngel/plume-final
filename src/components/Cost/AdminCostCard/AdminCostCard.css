@@ -140,7 +140,9 @@
   height: 45%;
   width: 100%;
   resize: none;
-  font-size: 0.5em
+  font-size: 0.5em;
+  padding: 0.5em;
+  
 }
 
 .textarea-back-container {
@@ -152,6 +154,6 @@
   height: 100%;
   width: 100%;
   resize: none;
-  padding: 0.25em 0.25em;
+  padding: 0.5em;
   font-size: 0.5em;
 }
