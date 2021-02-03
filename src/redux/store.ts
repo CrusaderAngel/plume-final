@@ -3,6 +3,7 @@ import thunk from 'redux-thunk';
 import { activitiesComponentDeleteDataReducer, activitiesComponentsDataReducer, activitiesComponentSendDataReducer } from './reducers/activitiesComponentsDataReducer';
 import {costComponentDeleteDataReducer, costComponentsDataReducer, costComponentSendDataReducer} from './reducers/costComponentsDataReducer';
 import { feedbackComponentDeleteDataReducer, feedbackComponentsDataReducer, feedbackComponentSendDataReducer } from './reducers/feedbackComponentsDataReducer';
+import { loginComponentDataReducer } from './reducers/loginComponentDataReducer';
 import {ratingComponentsDataReducer} from './reducers/ratingComponentsDataReducer';
 declare global {
   interface Window {
@@ -10,7 +11,28 @@ declare global {
   }
 }
 
-const initialState = {};
+const initialState = {
+  userLogin: {
+    data: localStorage.getItem('userCredentials') ? JSON.parse(localStorage.getItem('userCredentials')) : null
+  }
+};
+
+export interface IState {
+  activitiesComponentsData:object,
+  costComponentsData:object,
+  feedbackComponentsData: object,
+  ratingComponentData: object,
+  sendActivitiesComponentDataStatus:object,
+  deleteActivitiesComponentDataStatus: object,
+  sendCostComponentsDataStatus: object,
+  deleteCostComponentDataStatus: object,
+  sendFeedbackComponentDataStatus: object,
+  deleteFeedbackComponentDataStatus: object,
+  userLogin: {
+    error?:boolean
+    data: null
+  };
+}
 
 const reducer = combineReducers({
   activitiesComponentsData: activitiesComponentsDataReducer,
@@ -22,7 +44,8 @@ const reducer = combineReducers({
   sendCostComponentsDataStatus: costComponentSendDataReducer,
   deleteCostComponentDataStatus: costComponentDeleteDataReducer,
   sendFeedbackComponentDataStatus: feedbackComponentSendDataReducer,
-  deleteFeedbackComponentDataStatus: feedbackComponentDeleteDataReducer
+  deleteFeedbackComponentDataStatus: feedbackComponentDeleteDataReducer,
+  userLogin: loginComponentDataReducer
 });
 
 const composeEnhancers =
