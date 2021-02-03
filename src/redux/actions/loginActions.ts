@@ -8,7 +8,7 @@ export const sendUserCredentials = (email:string, password:string) => async(disp
     type: LOGIN_LIST_REQUEST
   });
   try {
-    const data = await Axios.post('http://localhost:5000/api/login', {email:email, password:password});
+    const data = await Axios.post('https://plume-backend.herokuapp.com/api/login', {email:email, password:password});
     dispatch({
       type: LOGIN_LIST_SUCCESS,
       payload: data
