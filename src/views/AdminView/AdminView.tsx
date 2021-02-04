@@ -10,7 +10,7 @@ import './AdminView.css';
 export const AdminView: React.FC = () => {
   const userCredentials = useSelector((state: IState) => state.userLogin);
   const [type, setType] = useState("ACTIVITIES");
-  const [redirect, setRedirect] = useState("/");
+  const redirect = "/";
 
   const { data } = userCredentials;
 
