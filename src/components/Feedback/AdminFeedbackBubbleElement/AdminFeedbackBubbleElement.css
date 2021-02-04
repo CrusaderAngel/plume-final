@@ -41,4 +41,17 @@
   .admin-bubble-img-content {
     border-radius: 3em;
   }
+
+  .admin-bubble-img-input {
+    width: 100%;
+    font-size: 4em;
+  }
+
+  .admin-bubble-img-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 4em;
+    height: 2.5em;
+  }
 }

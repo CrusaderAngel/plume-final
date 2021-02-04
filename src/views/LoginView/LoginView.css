@@ -59,8 +59,8 @@
   }
 
   .login-card-header {
-    font-size: 4em;
-  }
+    font-size: 5em;
+  }  
 
   .login-card-input {
     width: 80%;
@@ -73,7 +73,7 @@
   }
 
   .message-red {
-    font-size: 4em;
+    font-size: 5em;
   }
 }
 

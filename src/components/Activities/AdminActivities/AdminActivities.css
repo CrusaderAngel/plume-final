@@ -10,3 +10,21 @@
   width: 80%;
   margin: 2em auto;
 }
+
+/* Mobile portrait media */
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 767px) {
+  #admin-window {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .admin-activities-card-wrapper-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 4em;
+    font-size: 3em;
+    margin: 1em auto;
+  }
+}

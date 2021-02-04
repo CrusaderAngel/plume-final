@@ -59,11 +59,19 @@
     z-index: 1000;
   }
 
+  #admin-window {
+    height: 94%;
+    margin-top: 6%;
+  }
+
   #left-panel-content {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    height: 100%;
+    margin: 0;
+    width: 100%;
   }
 
   #admin-logo {

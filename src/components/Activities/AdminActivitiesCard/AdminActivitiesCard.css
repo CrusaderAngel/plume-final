@@ -103,7 +103,7 @@
   }
 
   .admin-activities-cell-text {
-    font-size: 2.3em;
+    font-size: 4em;
   }
 
   .admin-activities-form-inputs {
@@ -114,8 +114,7 @@
   .admin-activities-textarea {
     width: 100%;
     height: 75%;
-
-    font-size: 2.3em;
+    font-size: 3em;
     padding: 0.5em;
   }
 

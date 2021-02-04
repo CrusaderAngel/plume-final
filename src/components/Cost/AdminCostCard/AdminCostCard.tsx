@@ -73,32 +73,32 @@ export const AdminCostCard: React.FC<CostCardData> = (props: CostCardData) => {
       </div>
 
 
-      <form className="admin-activities-form">
-        <div className="admin-activities-form-inputs">
+      <form className="admin-cost-form">
+        <div className="admin-cost-form-inputs">
           <div className="textarea-wrapper">
             <div className="textarea-front-container">
-              <textarea name="admin-activities-image-text" className="admin-front-textarea-element"
+              <textarea name="admin-cost-image-text" className="admin-front-textarea-element"
                 cols={30}
                 rows={10}
                 placeholder="Название"
                 onChange={(event) => setTitle(event.target.value)} value={newTitle}></textarea>
-              <textarea name="admin-activities-image-text" className="admin-front-textarea-element"
+              <textarea name="admin-cost-image-text" className="admin-front-textarea-element"
                 cols={30}
                 rows={10}
                 placeholder="Цена"
                 onChange={(event) => setNewPrice(event.target.value as unknown as number)} value={newPrice}></textarea>
             </div>
             <div className="textarea-back-container">
-              <textarea name="admin-activities-image-text" className="admin-back-textarea-element"
+              <textarea name="admin-cost-image-text" className="admin-back-textarea-element"
                 cols={30}
                 rows={10}
                 placeholder="Подробнее"
                 onChange={(event) => setAdditionalInfo(event.target.value)} value={newAdditionalInfo}></textarea>
             </div>
           </div>
-          <input type="text" className="admin-activities-input" placeholder="Вставьте ссылку на фото" onChange={event => setNewImage(event.target.value)} />
+          <input type="text" className="admin-cost-input" placeholder="Вставьте ссылку на фото" onChange={event => setNewImage(event.target.value)} />
         </div>
-        <div className="admin-activities-form-buttons">
+        <div className="admin-cost-form-buttons">
           <button type="submit" className="btn btn-success" onClick={event => submitHandler(event)}>Сохранить</button>
           <button type="submit" className="btn btn-danger" onClick={event => deleteHandler(event)}>Удалить</button>
         </div>
